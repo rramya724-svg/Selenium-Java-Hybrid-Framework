@@ -1,0 +1,37 @@
+
+<!--
+    EnterpriseAutomationFramework - Master Suite
+    Owner : Lalith Kumar BV | Framework Version 1.0
+
+    parallel="methods" + thread-count="4" gives every @Test method its own
+    worker thread. BaseTest creates the WebDriver in @BeforeMethod and quits it
+    in @AfterMethod, and DriverManager confines that driver to the thread with a
+    ThreadLocal, so the four browsers never interfere with one another.
+
+    Override anything from the command line, for example:
+      mvn clean test -Dbrowser=edge -Dheadless=true -Dthread.count=2
+-->
+<suite name="EnterpriseAutomationSuite"
+       verbose="1"
+       parallel="methods"
+       thread-count="4"
+       data-provider-thread-count="4"
+       configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="com.enterprise.automation.listeners.TestListener"/>
+        <listener class-name="com.enterprise.automation.listeners.RetryTransformer"/>
+    </listeners>
+
+    <test name="WebRegressionSuite" preserve-order="false">
+
+        <classes>
+            <class name="com.enterprise.automation.tests.AmazonHomePageTest"/>
+            <class name="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+            <class name="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+            <class name="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        </classes>
+
+    </test>
+
+</suite>

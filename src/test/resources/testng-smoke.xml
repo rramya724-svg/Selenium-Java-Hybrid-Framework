@@ -1,0 +1,24 @@
+
+<!--
+    Optional smoke suite. Run it with:
+      mvn clean test -DsuiteXmlFile=src/test/resources/testng-smoke.xml
+-->
+<suite name="EnterpriseAutomationSmokeSuite" parallel="methods" thread-count="4">
+
+    <listeners>
+        <listener class-name="com.enterprise.automation.listeners.TestListener"/>
+        <listener class-name="com.enterprise.automation.listeners.RetryTransformer"/>
+    </listeners>
+
+    <test name="SmokeSuite">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.enterprise.automation.tests"/>
+        </packages>
+    </test>
+
+</suite>
