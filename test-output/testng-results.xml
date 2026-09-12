@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="4" ignored="4" total="12" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-28T16:43:45 IST" name="EnterpriseAutomationSuite" finished-at="2026-07-28T16:45:22 IST" duration-ms="97164">
+    <groups>
+      <group name="tooling">
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+      </group> <!-- tooling -->
+      <group name="regression">
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+      </group> <!-- regression -->
+      <group name="ecommerce">
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+      </group> <!-- ecommerce -->
+      <group name="smoke">
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+      </group> <!-- smoke -->
+      <group name="content">
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+      </group> <!-- content -->
+    </groups>
+    <test started-at="2026-07-28T16:43:45 IST" name="WebRegressionSuite" finished-at="2026-07-28T16:45:22 IST" duration-ms="97164">
+      <class name="com.enterprise.automation.tests.WikipediaHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6976" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:52 IST" name="verifyWikipediaHomePageTitle" description="Verify that the Wikipedia portal loads and exposes the expected title" finished-at="2026-07-28T16:43:55 IST" duration-ms="2991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:55 IST" name="tearDown" finished-at="2026-07-28T16:43:56 IST" duration-ms="1056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.WikipediaHomePageTest -->
+      <class name="com.enterprise.automation.tests.AmazonHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6956" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:43:52 IST" name="verifyAmazonHomePageTitle" description="Verify that the Amazon India home page loads and exposes the expected title" finished-at="2026-07-28T16:44:07 IST" duration-ms="14995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAmazonHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:44:08 IST" name="tearDown" finished-at="2026-07-28T16:44:08 IST" duration-ms="807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.AmazonHomePageTest -->
+      <class name="com.enterprise.automation.tests.FlipkartHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6840" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:43:52 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:44:23 IST" duration-ms="31590" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Flipkart home page did not render its brand logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.FlipkartHomePageTest.verifyFlipkartHomePageTitle(FlipkartHomePageTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlipkartHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:23 IST" name="tearDown" finished-at="2026-07-28T16:44:25 IST" duration-ms="1239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:25 IST" name="setUp" finished-at="2026-07-28T16:44:26 IST" duration-ms="1491" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:26 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:44:52 IST" duration-ms="25711" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Flipkart home page did not render its brand logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.FlipkartHomePageTest.verifyFlipkartHomePageTitle(FlipkartHomePageTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlipkartHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:52 IST" name="tearDown" finished-at="2026-07-28T16:44:53 IST" duration-ms="1179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:53 IST" name="setUp" finished-at="2026-07-28T16:44:55 IST" duration-ms="1478" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:55 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:45:20 IST" duration-ms="25371" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Flipkart home page did not render its brand logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.FlipkartHomePageTest.verifyFlipkartHomePageTitle(FlipkartHomePageTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlipkartHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:45:21 IST" name="tearDown" finished-at="2026-07-28T16:45:22 IST" duration-ms="1338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=FAILURE method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.FlipkartHomePageTest -->
+      <class name="com.enterprise.automation.tests.SeleniumHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="7019" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:43:52 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:44:17 IST" duration-ms="24932" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Selenium home page did not render its navigation logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.SeleniumHomePageTest.verifySeleniumHomePageTitle(SeleniumHomePageTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:17 IST" name="tearDown" finished-at="2026-07-28T16:44:18 IST" duration-ms="1185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:18 IST" name="setUp" finished-at="2026-07-28T16:44:20 IST" duration-ms="1761" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:20 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:44:44 IST" duration-ms="24105" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Selenium home page did not render its navigation logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.SeleniumHomePageTest.verifySeleniumHomePageTitle(SeleniumHomePageTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:44 IST" name="tearDown" finished-at="2026-07-28T16:44:45 IST" duration-ms="1162" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:45 IST" name="setUp" finished-at="2026-07-28T16:44:47 IST" duration-ms="1524" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:47 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:45:11 IST" duration-ms="23914" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Selenium home page did not render its navigation logo expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.SeleniumHomePageTest.verifySeleniumHomePageTitle(SeleniumHomePageTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:45:11 IST" name="tearDown" finished-at="2026-07-28T16:45:13 IST" duration-ms="1544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=FAILURE method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.SeleniumHomePageTest -->
+    </test> <!-- WebRegressionSuite -->
+  </suite> <!-- EnterpriseAutomationSuite -->
+</testng-results>
