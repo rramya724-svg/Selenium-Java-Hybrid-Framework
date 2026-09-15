@@ -57,7 +57,7 @@ public class FlipkartHomePageTest extends BaseTest {
         logger.info("Actual page title : {}", actualTitle);
         ExtentTestManager.logInfo("Actual page title : " + actualTitle);
 
-        Assert.assertFalse(actualTitle.toLowerCase().contains(data.expectedTitleFragment().toLowerCase()),
+        Assert.assertTrue(actualTitle.toLowerCase().contains(data.expectedTitleFragment().toLowerCase()),
                 MSG_TITLE_MISMATCH + " | expected fragment = '" + data.expectedTitleFragment()
                         + "' | actual title = '" + actualTitle + "'");
 
