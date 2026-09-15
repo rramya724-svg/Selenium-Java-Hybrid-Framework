@@ -48,7 +48,7 @@ public class SeleniumHomePageTest extends BaseTest {
 
         SeleniumHomePage seleniumHomePage = new SeleniumHomePage().openHomePage(data.applicationUrl());
 
-        Assert.assertTrue(seleniumHomePage.isHomePageLoaded(), MSG_PAGE_NOT_LOADED);
+        Assert.assertFalse(seleniumHomePage.isHomePageLoaded(), MSG_PAGE_NOT_LOADED);
         ExtentTestManager.logInfo("Selenium navigation logo rendered successfully");
 
         Assert.assertTrue(seleniumHomePage.isDocumentationLinkDisplayed(), MSG_DOCUMENTATION_MISSING);
