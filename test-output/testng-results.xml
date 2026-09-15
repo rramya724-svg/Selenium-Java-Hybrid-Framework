@@ -2,34 +2,34 @@
 <testng-results retried="4" ignored="4" total="12" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-28T16:43:45 IST" name="EnterpriseAutomationSuite" finished-at="2026-07-28T16:45:22 IST" duration-ms="97164">
+  <suite started-at="2026-09-12T19:25:10 IST" name="EnterpriseAutomationSuite" finished-at="2026-09-12T19:26:40 IST" duration-ms="90085">
     <groups>
       <group name="tooling">
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
       </group> <!-- tooling -->
       <group name="regression">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
       </group> <!-- regression -->
       <group name="ecommerce">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
       </group> <!-- ecommerce -->
       <group name="smoke">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
       </group> <!-- smoke -->
       <group name="content">
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
       </group> <!-- content -->
     </groups>
-    <test started-at="2026-07-28T16:43:45 IST" name="WebRegressionSuite" finished-at="2026-07-28T16:45:22 IST" duration-ms="97164">
+    <test started-at="2026-09-12T19:25:10 IST" name="WebRegressionSuite" finished-at="2026-09-12T19:26:40 IST" duration-ms="90085">
       <class name="com.enterprise.automation.tests.WikipediaHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6976" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" started-at="2026-09-12T19:25:10 IST" name="setUp" finished-at="2026-09-12T19:25:18 IST" duration-ms="8143" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -38,15 +38,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:52 IST" name="verifyWikipediaHomePageTitle" description="Verify that the Wikipedia portal loads and exposes the expected title" finished-at="2026-07-28T16:43:55 IST" duration-ms="2991" status="PASS">
+        <test-method signature="verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" started-at="2026-09-12T19:25:18 IST" name="verifyWikipediaHomePageTitle" description="Verify that the Wikipedia portal loads and exposes the expected title" finished-at="2026-09-12T19:25:22 IST" duration-ms="3910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWikipediaHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2]" started-at="2026-07-28T16:43:55 IST" name="tearDown" finished-at="2026-07-28T16:43:56 IST" duration-ms="1056" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5]" started-at="2026-09-12T19:25:24 IST" name="tearDown" finished-at="2026-09-12T19:25:25 IST" duration-ms="538" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@53d102a2] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@6b3e12b5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -55,7 +55,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.WikipediaHomePageTest -->
       <class name="com.enterprise.automation.tests.AmazonHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6956" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" started-at="2026-09-12T19:25:10 IST" name="setUp" finished-at="2026-09-12T19:25:17 IST" duration-ms="7088" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -64,15 +64,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:43:52 IST" name="verifyAmazonHomePageTitle" description="Verify that the Amazon India home page loads and exposes the expected title" finished-at="2026-07-28T16:44:07 IST" duration-ms="14995" status="PASS">
+        <test-method signature="verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" started-at="2026-09-12T19:25:17 IST" name="verifyAmazonHomePageTitle" description="Verify that the Amazon India home page loads and exposes the expected title" finished-at="2026-09-12T19:25:24 IST" duration-ms="6603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f]" started-at="2026-07-28T16:44:08 IST" name="tearDown" finished-at="2026-07-28T16:44:08 IST" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c]" started-at="2026-09-12T19:25:26 IST" name="tearDown" finished-at="2026-09-12T19:25:27 IST" duration-ms="793" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@305a0c5f] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@1ecee32c] output={null}]]]>
               </value>
             </param>
           </params>
@@ -81,7 +81,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.AmazonHomePageTest -->
       <class name="com.enterprise.automation.tests.FlipkartHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="6840" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:25:10 IST" name="setUp" finished-at="2026-09-12T19:25:17 IST" duration-ms="7057" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -90,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:43:52 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:44:23 IST" duration-ms="31590" status="SKIP">
+        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:25:17 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-09-12T19:25:44 IST" duration-ms="27207" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
@@ -123,18 +123,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlipkartHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:23 IST" name="tearDown" finished-at="2026-07-28T16:44:25 IST" duration-ms="1239" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:25:44 IST" name="tearDown" finished-at="2026-09-12T19:25:45 IST" duration-ms="741" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:25 IST" name="setUp" finished-at="2026-07-28T16:44:26 IST" duration-ms="1491" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:25:45 IST" name="setUp" finished-at="2026-09-12T19:25:48 IST" duration-ms="2987" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -143,7 +143,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:26 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:44:52 IST" duration-ms="25711" status="SKIP">
+        <test-method retried="true" signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:25:48 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-09-12T19:26:11 IST" duration-ms="23093" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
@@ -176,18 +176,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlipkartHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:52 IST" name="tearDown" finished-at="2026-07-28T16:44:53 IST" duration-ms="1179" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:26:11 IST" name="tearDown" finished-at="2026-09-12T19:26:12 IST" duration-ms="287" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SKIP method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:53 IST" name="setUp" finished-at="2026-07-28T16:44:55 IST" duration-ms="1478" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:26:12 IST" name="setUp" finished-at="2026-09-12T19:26:14 IST" duration-ms="2247" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -196,7 +196,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:44:55 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-07-28T16:45:20 IST" duration-ms="25371" status="FAIL">
+        <test-method signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:26:14 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-09-12T19:26:36 IST" duration-ms="22390" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Flipkart home page did not render its brand logo expected [true] but found [false]]]>
@@ -229,11 +229,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFlipkartHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c]" started-at="2026-07-28T16:45:21 IST" name="tearDown" finished-at="2026-07-28T16:45:22 IST" duration-ms="1338" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e]" started-at="2026-09-12T19:26:37 IST" name="tearDown" finished-at="2026-09-12T19:26:37 IST" duration-ms="430" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=FAILURE method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@35d08e6c] output={null}]]]>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=FAILURE method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@6c45ee6e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -242,7 +242,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.FlipkartHomePageTest -->
       <class name="com.enterprise.automation.tests.SeleniumHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:43:45 IST" name="setUp" finished-at="2026-07-28T16:43:52 IST" duration-ms="7019" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:25:10 IST" name="setUp" finished-at="2026-09-12T19:25:18 IST" duration-ms="7874" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -251,7 +251,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:43:52 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:44:17 IST" duration-ms="24932" status="SKIP">
+        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:25:18 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-09-12T19:25:42 IST" duration-ms="23588" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
@@ -284,18 +284,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySeleniumHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:17 IST" name="tearDown" finished-at="2026-07-28T16:44:18 IST" duration-ms="1185" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:25:42 IST" name="tearDown" finished-at="2026-09-12T19:25:42 IST" duration-ms="405" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:18 IST" name="setUp" finished-at="2026-07-28T16:44:20 IST" duration-ms="1761" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:25:42 IST" name="setUp" finished-at="2026-09-12T19:25:45 IST" duration-ms="3318" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -304,7 +304,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:20 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:44:44 IST" duration-ms="24105" status="SKIP">
+        <test-method retried="true" signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:25:45 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-09-12T19:26:15 IST" duration-ms="29838" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
@@ -337,18 +337,18 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySeleniumHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:44 IST" name="tearDown" finished-at="2026-07-28T16:44:45 IST" duration-ms="1162" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:26:15 IST" name="tearDown" finished-at="2026-09-12T19:26:16 IST" duration-ms="262" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SKIP method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:45 IST" name="setUp" finished-at="2026-07-28T16:44:47 IST" duration-ms="1524" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:26:16 IST" name="setUp" finished-at="2026-09-12T19:26:18 IST" duration-ms="2736" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -357,7 +357,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:44:47 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-07-28T16:45:11 IST" duration-ms="23914" status="FAIL">
+        <test-method signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:26:18 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-09-12T19:26:40 IST" duration-ms="21310" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The Selenium home page did not render its navigation logo expected [true] but found [false]]]>
@@ -390,11 +390,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySeleniumHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e]" started-at="2026-07-28T16:45:11 IST" name="tearDown" finished-at="2026-07-28T16:45:13 IST" duration-ms="1544" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250]" started-at="2026-09-12T19:26:40 IST" name="tearDown" finished-at="2026-09-12T19:26:40 IST" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=FAILURE method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@6c45ee6e] output={null}]]]>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=FAILURE method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@5aac4250] output={null}]]]>
               </value>
             </param>
           </params>
