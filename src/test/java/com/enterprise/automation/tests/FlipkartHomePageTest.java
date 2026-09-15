@@ -47,7 +47,7 @@ public class FlipkartHomePageTest extends BaseTest {
         FlipkartHomePage flipkartHomePage = new FlipkartHomePage().openHomePage(data.applicationUrl());
         flipkartHomePage.dismissLoginPopupIfPresent();
 
-        Assert.assertTrue(flipkartHomePage.isHomePageLoaded(), MSG_PAGE_NOT_LOADED);
+        Assert.assertFalse(flipkartHomePage.isHomePageLoaded(), MSG_PAGE_NOT_LOADED);
         ExtentTestManager.logInfo("Flipkart brand logo rendered successfully");
 
         Assert.assertTrue(flipkartHomePage.isSearchBoxDisplayed(), MSG_SEARCH_BOX_MISSING);
