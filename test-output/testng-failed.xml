@@ -14,13 +14,6 @@
           <include name="verifyFlipkartHomePageTitle"/>
         </methods>
       </class> <!-- com.enterprise.automation.tests.FlipkartHomePageTest -->
-      <class name="com.enterprise.automation.tests.SeleniumHomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifySeleniumHomePageTitle"/>
-        </methods>
-      </class> <!-- com.enterprise.automation.tests.SeleniumHomePageTest -->
     </classes>
   </test> <!-- WebRegressionSuite(failed) -->
 </suite> <!-- Failed suite [EnterpriseAutomationSuite] -->

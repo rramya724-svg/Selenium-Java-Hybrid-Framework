@@ -1,172 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- =========================================================
+         PROJECT INFORMATION
+         ========================================================= -->
+
     <groupId>com.enterprise.automation</groupId>
+
     <artifactId>EnterpriseAutomationFramework</artifactId>
+
     <version>1.0.0</version>
+
     <packaging>jar</packaging>
 
     <name>EnterpriseAutomationFramework</name>
-    <description>Enterprise grade hybrid Selenium automation framework (POM + Data Driven + Keyword friendly)</description>
+
+    <description>
+        Enterprise grade hybrid Selenium automation framework
+        (POM + Data Driven + Keyword friendly)
+    </description>
+
+
+    <!-- =========================================================
+         PROPERTIES
+         ========================================================= -->
 
     <properties>
+
+        <!-- Java -->
         <maven.compiler.release>21</maven.compiler.release>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <!-- Dependency versions : single source of truth -->
+
+        <!-- =====================================================
+             DEPENDENCY VERSIONS
+             ===================================================== -->
+
         <selenium.version>4.27.0</selenium.version>
+
         <testng.version>7.10.2</testng.version>
+
         <webdrivermanager.version>5.9.2</webdrivermanager.version>
+
         <extentreports.version>5.1.2</extentreports.version>
+
         <log4j.version>2.24.3</log4j.version>
+
         <poi.version>5.3.0</poi.version>
+
         <angus.mail.version>2.0.3</angus.mail.version>
+
         <commons.io.version>2.18.0</commons.io.version>
+
         <commons.lang3.version>3.17.0</commons.lang3.version>
 
-        <!-- Plugin versions -->
+
+        <!-- =====================================================
+             ALLURE
+             ===================================================== -->
+
+        <allure.version>2.35.3</allure.version>
+
+
+        <!-- =====================================================
+             MAVEN PLUGIN VERSIONS
+             ===================================================== -->
+
         <compiler.plugin.version>3.13.0</compiler.plugin.version>
+
         <surefire.plugin.version>3.5.2</surefire.plugin.version>
+
         <sonar.plugin.version>4.0.0.4121</sonar.plugin.version>
 
-        <!-- Execution defaults : overridable from the command line -->
+
+        <!-- =====================================================
+             TEST EXECUTION
+             ===================================================== -->
+
         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+
         <thread.count>4</thread.count>
 
-        <!-- SonarQube -->
+
+        <!-- =====================================================
+             SONARQUBE
+             ===================================================== -->
+
         <sonar.projectKey>EnterpriseAutomationFramework</sonar.projectKey>
+
         <sonar.sources>src/main/java</sonar.sources>
+
         <sonar.tests>src/test/java</sonar.tests>
+
         <sonar.java.source>21</sonar.java.source>
+
     </properties>
+
+
+    <!-- =========================================================
+         ALLURE DEPENDENCY MANAGEMENT
+         ========================================================= -->
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+
+                <groupId>io.qameta.allure</groupId>
+
+                <artifactId>allure-bom</artifactId>
+
+                <version>${allure.version}</version>
+
+                <type>pom</type>
+
+                <scope>import</scope>
+
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+
+    <!-- =========================================================
+         DEPENDENCIES
+         ========================================================= -->
 
     <dependencies>
 
-        <!-- ============ Selenium ============ -->
+
+        <!-- =====================================================
+             SELENIUM
+             ===================================================== -->
+
         <dependency>
+
             <groupId>org.seleniumhq.selenium</groupId>
+
             <artifactId>selenium-java</artifactId>
+
             <version>${selenium.version}</version>
+
         </dependency>
 
-        <!-- ============ Driver binary management ============ -->
+
+        <!-- =====================================================
+             WEBDRIVER MANAGER
+             ===================================================== -->
+
         <dependency>
+
             <groupId>io.github.bonigarcia</groupId>
+
             <artifactId>webdrivermanager</artifactId>
+
             <version>${webdrivermanager.version}</version>
+
         </dependency>
 
-        <!-- ============ Test runner ============ -->
+
+        <!-- =====================================================
+             TESTNG
+             ===================================================== -->
+
         <dependency>
+
             <groupId>org.testng</groupId>
+
             <artifactId>testng</artifactId>
+
             <version>${testng.version}</version>
+
         </dependency>
 
-        <!-- ============ Reporting ============ -->
+
+        <!-- =====================================================
+             EXTENT REPORTS
+             ===================================================== -->
+
         <dependency>
+
             <groupId>com.aventstack</groupId>
+
             <artifactId>extentreports</artifactId>
+
             <version>${extentreports.version}</version>
+
         </dependency>
 
-        <!-- ============ Logging ============ -->
+
+        <!-- =====================================================
+             ALLURE TESTNG
+             ===================================================== -->
+
         <dependency>
+
+            <groupId>io.qameta.allure</groupId>
+
+            <artifactId>allure-testng</artifactId>
+
+            <scope>test</scope>
+
+        </dependency>
+
+
+        <!-- =====================================================
+             LOG4J
+             ===================================================== -->
+
+        <dependency>
+
             <groupId>org.apache.logging.log4j</groupId>
+
             <artifactId>log4j-api</artifactId>
+
             <version>${log4j.version}</version>
+
         </dependency>
+
+
         <dependency>
+
             <groupId>org.apache.logging.log4j</groupId>
+
             <artifactId>log4j-core</artifactId>
+
             <version>${log4j.version}</version>
+
         </dependency>
+
+
         <dependency>
+
             <groupId>org.apache.logging.log4j</groupId>
+
             <artifactId>log4j-slf4j2-impl</artifactId>
+
             <version>${log4j.version}</version>
+
         </dependency>
 
-        <!-- ============ Excel : Apache POI ============ -->
+
+        <!-- =====================================================
+             APACHE POI
+             ===================================================== -->
+
         <dependency>
+
             <groupId>org.apache.poi</groupId>
+
             <artifactId>poi</artifactId>
+
             <version>${poi.version}</version>
+
         </dependency>
+
+
         <dependency>
+
             <groupId>org.apache.poi</groupId>
+
             <artifactId>poi-ooxml</artifactId>
+
             <version>${poi.version}</version>
+
         </dependency>
 
-        <!-- ============ Email : Jakarta Mail (Angus implementation) ============ -->
+
+        <!-- =====================================================
+             JAKARTA MAIL / ANGUS MAIL
+             ===================================================== -->
+
         <dependency>
+
             <groupId>org.eclipse.angus</groupId>
+
             <artifactId>angus-mail</artifactId>
+
             <version>${angus.mail.version}</version>
+
         </dependency>
 
-        <!-- ============ Apache Commons ============ -->
+
+        <!-- =====================================================
+             COMMONS IO
+             ===================================================== -->
+
         <dependency>
+
             <groupId>commons-io</groupId>
+
             <artifactId>commons-io</artifactId>
+
             <version>${commons.io.version}</version>
+
         </dependency>
+
+
+        <!-- =====================================================
+             COMMONS LANG3
+             ===================================================== -->
+
         <dependency>
+
             <groupId>org.apache.commons</groupId>
+
             <artifactId>commons-lang3</artifactId>
+
             <version>${commons.lang3.version}</version>
+
         </dependency>
 
     </dependencies>
 
+
+    <!-- =========================================================
+         BUILD
+         ========================================================= -->
+
     <build>
+
         <finalName>EnterpriseAutomationFramework</finalName>
 
         <plugins>
 
+
+            <!-- =================================================
+                 MAVEN COMPILER
+                 ================================================= -->
+
             <plugin>
+
                 <groupId>org.apache.maven.plugins</groupId>
+
                 <artifactId>maven-compiler-plugin</artifactId>
+
                 <version>${compiler.plugin.version}</version>
+
                 <configuration>
+
                     <release>${maven.compiler.release}</release>
+
                     <encoding>${project.build.sourceEncoding}</encoding>
+
                     <compilerArgs>
+
                         <arg>-Xlint:all</arg>
+
                     </compilerArgs>
+
                 </configuration>
+
             </plugin>
 
+
+            <!-- =================================================
+                 MAVEN SUREFIRE
+                 ================================================= -->
+
             <plugin>
+
                 <groupId>org.apache.maven.plugins</groupId>
+
                 <artifactId>maven-surefire-plugin</artifactId>
+
                 <version>${surefire.plugin.version}</version>
+
                 <configuration>
+
+                    <!-- TestNG suite -->
                     <suiteXmlFiles>
+
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+
                     </suiteXmlFiles>
+
+
+                    <!-- Thread count -->
                     <threadCount>${thread.count}</threadCount>
+
+
+                    <!-- Fail Maven build when tests fail -->
                     <testFailureIgnore>false</testFailureIgnore>
-                    <reportsDirectory>${project.basedir}/test-output/surefire-reports</reportsDirectory>
+
+
+                    <!-- Surefire reports -->
+                    <reportsDirectory>
+                        ${project.basedir}/test-output/surefire-reports
+                    </reportsDirectory>
+
+
+                    <!-- System properties -->
                     <systemPropertyVariables>
-                        <log4j2.configurationFile>src/test/resources/log4j2.xml</log4j2.configurationFile>
+
+                        <log4j2.configurationFile>
+                            src/test/resources/log4j2.xml
+                        </log4j2.configurationFile>
+
                     </systemPropertyVariables>
+
                 </configuration>
+
             </plugin>
 
+
+            <!-- =================================================
+                 SONARQUBE
+                 ================================================= -->
+
             <plugin>
+
                 <groupId>org.sonarsource.scanner.maven</groupId>
+
                 <artifactId>sonar-maven-plugin</artifactId>
+
                 <version>${sonar.plugin.version}</version>
+
             </plugin>
+
 
         </plugins>
+
     </build>
 
 </project>

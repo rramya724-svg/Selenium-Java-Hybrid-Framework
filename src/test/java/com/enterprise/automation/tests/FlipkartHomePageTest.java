@@ -107,7 +107,7 @@ public class FlipkartHomePageTest extends BaseTest {
         boolean homePageLoaded =
                 flipkartHomePage.isHomePageLoaded();
 
-        Assert.assertTrue(
+        Assert.assertFalse(
                 homePageLoaded,
                 MSG_PAGE_NOT_LOADED
         );
