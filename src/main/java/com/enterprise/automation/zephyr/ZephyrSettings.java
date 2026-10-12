@@ -20,6 +20,7 @@ public record ZephyrSettings(boolean enabled,
                              String testCycleKey,
                              String testCycleNamePrefix,
                              boolean autoCreateTestCases,
+                             boolean updateExistingExecution,
                              String environmentName,
                              String statusPass,
                              String statusFail,
@@ -45,6 +46,7 @@ public record ZephyrSettings(boolean enabled,
                 ConfigReader.get(ConfigKey.ZEPHYR_TEST_CYCLE_KEY, ""),
                 ConfigReader.get(ConfigKey.ZEPHYR_TEST_CYCLE_NAME_PREFIX, "Automation Run"),
                 ConfigReader.getBoolean(ConfigKey.ZEPHYR_AUTO_CREATE_TEST_CASES, true),
+                ConfigReader.getBoolean(ConfigKey.ZEPHYR_UPDATE_EXISTING_EXECUTION, true),
                 ConfigReader.get(ConfigKey.ZEPHYR_ENVIRONMENT, ""),
                 ConfigReader.get(ConfigKey.ZEPHYR_STATUS_PASS, "Pass"),
                 ConfigReader.get(ConfigKey.ZEPHYR_STATUS_FAIL, "Fail"),
@@ -71,7 +73,8 @@ public record ZephyrSettings(boolean enabled,
         return "ZephyrSettings[enabled=" + enabled + ", baseUrl=" + (baseUrl.isBlank() ? "<auto-detect>" : baseUrl)
                 + ", apiToken=" + (hasToken() ? "<set>" : "<missing>") + ", projectKey=" + projectKey
                 + ", testCycleKey=" + (usesFixedTestCycle() ? testCycleKey : "<new per run>")
-                + ", autoCreateTestCases=" + autoCreateTestCases + ", manualTestCases=" + manualTestCaseKeys
+                + ", autoCreateTestCases=" + autoCreateTestCases + ", updateExisting=" + updateExistingExecution
+                + ", manualTestCases=" + manualTestCaseKeys
                 + ", environmentName=" + environmentName + ", timeout=" + timeout + "]";
     }
 
@@ -79,6 +82,10 @@ public record ZephyrSettings(boolean enabled,
         String fromSystemProperty = System.getProperty(ConfigKey.ZEPHYR_API_TOKEN.key());
         if (fromSystemProperty != null && !fromSystemProperty.isBlank()) {
             return fromSystemProperty.trim();
+        }
+        String fromConfig = ConfigReader.get(ConfigKey.ZEPHYR_API_TOKEN, "");
+        if (!fromConfig.isBlank()) {
+            return fromConfig.trim();
         }
         String fromEnvironment = System.getenv(TOKEN_ENVIRONMENT_VARIABLE);
         if (fromEnvironment != null && !fromEnvironment.isBlank()) {
@@ -91,7 +98,7 @@ public record ZephyrSettings(boolean enabled,
                     TOKEN_ENVIRONMENT_VARIABLE);
             return fromWindowsUserEnvironment;
         }
-        return ConfigReader.get(ConfigKey.ZEPHYR_API_TOKEN, "");
+        return "";
     }
 
     static String readWindowsUserEnvironment(String name) {
