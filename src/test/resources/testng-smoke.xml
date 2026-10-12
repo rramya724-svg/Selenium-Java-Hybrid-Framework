@@ -8,6 +8,8 @@
     <listeners>
         <listener class-name="com.enterprise.automation.listeners.TestListener"/>
         <listener class-name="com.enterprise.automation.listeners.RetryTransformer"/>
+        <!-- Posts the final result of every test to Zephyr Essential after the suite (see ZEPHYR_SETUP.md) -->
+        <listener class-name="com.enterprise.automation.zephyr.ZephyrListener"/>
     </listeners>
 
     <test name="SmokeSuite">

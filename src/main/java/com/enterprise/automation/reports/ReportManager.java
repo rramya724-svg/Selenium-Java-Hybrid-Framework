@@ -10,27 +10,13 @@ import com.enterprise.automation.exceptions.FrameworkException;
 import com.enterprise.automation.utilities.DateUtility;
 import com.enterprise.automation.utilities.LoggerUtility;
 import org.apache.logging.log4j.Logger;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-/**
- * Owns the lifecycle of the single {@link ExtentReports} instance.
- *
- * <p>{@code ExtentReports} is thread safe for concurrent {@code createTest}
- * calls, so exactly one instance is shared across every parallel thread and
- * flushed once when the suite finishes. Creation is guarded by double checked
- * locking on a {@code volatile} field.</p>
- *
- * @author Lalith Kumar BV
- * @version 1.0
- */
 public final class ReportManager {
-
     private static final Logger LOGGER = LoggerUtility.getLogger(ReportManager.class);
     private static final Object LOCK = new Object();
-
     private static volatile ExtentReports extentReports;
     private static volatile Path reportFilePath;
 
@@ -38,11 +24,6 @@ public final class ReportManager {
         throw new IllegalStateException("ReportManager is a utility class and must not be instantiated");
     }
 
-    /**
-     * Returns the shared reporter, creating and configuring it on first use.
-     *
-     * @return the singleton {@link ExtentReports} instance
-     */
     public static ExtentReports getInstance() {
         ExtentReports local = extentReports;
         if (local == null) {
@@ -64,14 +45,10 @@ public final class ReportManager {
         } catch (IOException ioException) {
             throw new FrameworkException("Unable to create the report directory: " + directory, ioException);
         }
-
         boolean overrideReports = ConfigReader.getBoolean(ConfigKey.OVERRIDE_REPORTS, true);
-        String fileName = overrideReports
-                ? FrameworkConstants.EXTENT_REPORT_FILE_NAME
+        String fileName = overrideReports ? FrameworkConstants.EXTENT_REPORT_FILE_NAME
                 : "ExtentReport_" + DateUtility.currentFileTimestamp() + ".html";
-
         reportFilePath = directory.resolve(fileName);
-
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportFilePath.toFile());
         sparkReporter.config().setTheme(Theme.STANDARD);
         sparkReporter.config().setDocumentTitle("Enterprise Automation Execution Report");
@@ -79,11 +56,9 @@ public final class ReportManager {
                 + " | " + ConfigReader.get(ConfigKey.ENVIRONMENT, "QA"));
         sparkReporter.config().setTimeStampFormat(FrameworkConstants.DISPLAY_TIMESTAMP_PATTERN);
         sparkReporter.config().setEncoding("UTF-8");
-
         ExtentReports reports = new ExtentReports();
         reports.attachReporter(sparkReporter);
         attachSystemInformation(reports);
-
         LOGGER.info("Extent report initialised at {}", reportFilePath);
         return reports;
     }
@@ -105,9 +80,6 @@ public final class ReportManager {
         reports.setSystemInfo("Available Processors", String.valueOf(Runtime.getRuntime().availableProcessors()));
     }
 
-    /**
-     * Writes every buffered log entry to disk. Safe to call more than once.
-     */
     public static void flush() {
         ExtentReports local = extentReports;
         if (local != null) {
@@ -116,16 +88,10 @@ public final class ReportManager {
         }
     }
 
-    /**
-     * @return the absolute path of the generated Extent report, {@code null} before initialisation
-     */
     public static Path getReportFilePath() {
         return reportFilePath;
     }
 
-    /**
-     * @return the absolute report directory resolved from configuration
-     */
     public static Path reportDirectory() {
         String configured = ConfigReader.get(ConfigKey.REPORT_PATH, "test-output/ExtentReports");
         Path path = Path.of(configured);

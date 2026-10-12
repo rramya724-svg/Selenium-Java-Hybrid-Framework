@@ -63,6 +63,9 @@
 
         <commons.lang3.version>3.17.0</commons.lang3.version>
 
+        <!-- JSON for the Zephyr Essential REST integration -->
+        <jackson.version>2.20.1</jackson.version>
+
 
         <!-- =====================================================
              ALLURE
@@ -319,6 +322,21 @@
             <artifactId>commons-lang3</artifactId>
 
             <version>${commons.lang3.version}</version>
+
+        </dependency>
+
+
+        <!-- =====================================================
+             JACKSON (Zephyr Essential REST integration)
+             ===================================================== -->
+
+        <dependency>
+
+            <groupId>com.fasterxml.jackson.core</groupId>
+
+            <artifactId>jackson-databind</artifactId>
+
+            <version>${jackson.version}</version>
 
         </dependency>
 

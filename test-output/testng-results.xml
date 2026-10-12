@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="4" ignored="4" total="18" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-22T20:40:34 IST" name="EnterpriseAutomationSuite" finished-at="2026-09-22T20:41:09 IST" duration-ms="34377">
+  <suite started-at="2026-10-12T12:28:18 IST" name="EnterpriseAutomationSuite" finished-at="2026-10-12T12:29:17 IST" duration-ms="59143">
     <groups>
       <group name="tooling">
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="SeleniumHeroSectionTest.verifySeleniumHeroSection()[pri:7, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77]" name="verifySeleniumHeroSection" class="com.enterprise.automation.tests.SeleniumHeroSectionTest"/>
+        <method signature="SeleniumDocumentationPageTest.verifySeleniumDocumentationPage()[pri:8, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098]" name="verifySeleniumDocumentationPage" class="com.enterprise.automation.tests.SeleniumDocumentationPageTest"/>
+        <method signature="SeleniumDownloadsPageTest.verifySeleniumDownloadsPageTitle()[pri:10, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458]" name="verifySeleniumDownloadsPageTitle" class="com.enterprise.automation.tests.SeleniumDownloadsPageTest"/>
       </group> <!-- tooling -->
       <group name="regression">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="WikipediaSearchTest.verifyWikipediaArticleSearch()[pri:5, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" name="verifyWikipediaArticleSearch" class="com.enterprise.automation.tests.WikipediaSearchTest"/>
+        <method signature="WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" name="verifyWikipediaLanguageSelector" class="com.enterprise.automation.tests.WikipediaLanguageSelectorTest"/>
+        <method signature="SeleniumHeroSectionTest.verifySeleniumHeroSection()[pri:7, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77]" name="verifySeleniumHeroSection" class="com.enterprise.automation.tests.SeleniumHeroSectionTest"/>
+        <method signature="SeleniumDocumentationPageTest.verifySeleniumDocumentationPage()[pri:8, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098]" name="verifySeleniumDocumentationPage" class="com.enterprise.automation.tests.SeleniumDocumentationPageTest"/>
+        <method signature="WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" name="verifyWikipediaPortalTaglineInTitle" class="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest"/>
+        <method signature="SeleniumDownloadsPageTest.verifySeleniumDownloadsPageTitle()[pri:10, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458]" name="verifySeleniumDownloadsPageTitle" class="com.enterprise.automation.tests.SeleniumDownloadsPageTest"/>
       </group> <!-- regression -->
       <group name="ecommerce">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
       </group> <!-- ecommerce -->
       <group name="smoke">
-        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
-        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
-        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" name="verifyAmazonHomePageTitle" class="com.enterprise.automation.tests.AmazonHomePageTest"/>
+        <method signature="FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" name="verifyFlipkartHomePageTitle" class="com.enterprise.automation.tests.FlipkartHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" name="verifySeleniumHomePageTitle" class="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+        <method signature="WikipediaSearchTest.verifyWikipediaArticleSearch()[pri:5, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" name="verifyWikipediaArticleSearch" class="com.enterprise.automation.tests.WikipediaSearchTest"/>
       </group> <!-- smoke -->
       <group name="content">
-        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" name="verifyWikipediaHomePageTitle" class="com.enterprise.automation.tests.WikipediaHomePageTest"/>
+        <method signature="WikipediaSearchTest.verifyWikipediaArticleSearch()[pri:5, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" name="verifyWikipediaArticleSearch" class="com.enterprise.automation.tests.WikipediaSearchTest"/>
+        <method signature="WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" name="verifyWikipediaLanguageSelector" class="com.enterprise.automation.tests.WikipediaLanguageSelectorTest"/>
+        <method signature="WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" name="verifyWikipediaPortalTaglineInTitle" class="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest"/>
       </group> <!-- content -->
     </groups>
-    <test started-at="2026-09-22T20:40:34 IST" name="WebRegressionSuite" finished-at="2026-09-22T20:41:09 IST" duration-ms="34377">
-      <class name="com.enterprise.automation.tests.WikipediaHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" started-at="2026-09-22T20:40:34 IST" name="setUp" finished-at="2026-09-22T20:40:42 IST" duration-ms="7415" status="PASS">
+    <test started-at="2026-10-12T12:28:18 IST" name="WebRegressionSuite" finished-at="2026-10-12T12:29:17 IST" duration-ms="59143">
+      <class name="com.enterprise.automation.tests.SeleniumDownloadsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458]" started-at="2026-10-12T12:28:37 IST" name="setUp" finished-at="2026-10-12T12:28:38 IST" duration-ms="763" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -38,15 +51,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" started-at="2026-09-22T20:40:42 IST" name="verifyWikipediaHomePageTitle" description="Verify that the Wikipedia portal loads and exposes the expected title" finished-at="2026-09-22T20:40:46 IST" duration-ms="4414" status="PASS">
+        <test-method signature="verifySeleniumDownloadsPageTitle()[pri:10, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458]" started-at="2026-10-12T12:28:38 IST" name="verifySeleniumDownloadsPageTitle" description="Verify that the Selenium Downloads page title reads &#039;Downloads Center&#039;" finished-at="2026-10-12T12:28:39 IST" duration-ms="1121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWikipediaHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b]" started-at="2026-09-22T20:40:47 IST" name="tearDown" finished-at="2026-09-22T20:40:48 IST" duration-ms="685" status="PASS">
+        </test-method> <!-- verifySeleniumDownloadsPageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458]" started-at="2026-10-12T12:28:39 IST" name="tearDown" finished-at="2026-10-12T12:28:40 IST" duration-ms="633" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@5f2606b] output={null}]]]>
+                <![CDATA[[TestResult name=verifySeleniumDownloadsPageTitle status=SUCCESS method=SeleniumDownloadsPageTest.verifySeleniumDownloadsPageTitle()[pri:10, instance:com.enterprise.automation.tests.SeleniumDownloadsPageTest@77307458] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.SeleniumDownloadsPageTest -->
+      <class name="com.enterprise.automation.tests.WikipediaSearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" started-at="2026-10-12T12:28:24 IST" name="setUp" finished-at="2026-10-12T12:28:25 IST" duration-ms="679" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWikipediaArticleSearch()[pri:5, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" started-at="2026-10-12T12:28:25 IST" name="verifyWikipediaArticleSearch" description="Verify that searching from the Wikipedia portal opens the matching article" finished-at="2026-10-12T12:28:28 IST" duration-ms="2948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaArticleSearch -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba]" started-at="2026-10-12T12:28:28 IST" name="tearDown" finished-at="2026-10-12T12:28:28 IST" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaArticleSearch status=SUCCESS method=WikipediaSearchTest.verifyWikipediaArticleSearch()[pri:5, instance:com.enterprise.automation.tests.WikipediaSearchTest@6fa590ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.WikipediaSearchTest -->
+      <class name="com.enterprise.automation.tests.WikipediaHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" started-at="2026-10-12T12:28:18 IST" name="setUp" finished-at="2026-10-12T12:28:22 IST" duration-ms="3298" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" started-at="2026-10-12T12:28:22 IST" name="verifyWikipediaHomePageTitle" description="Verify that the Wikipedia portal loads and exposes the expected title" finished-at="2026-10-12T12:28:23 IST" duration-ms="1624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5]" started-at="2026-10-12T12:28:24 IST" name="tearDown" finished-at="2026-10-12T12:28:24 IST" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWikipediaHomePageTitle()[pri:3, instance:com.enterprise.automation.tests.WikipediaHomePageTest@293bb8a5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -55,7 +120,7 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.WikipediaHomePageTest -->
       <class name="com.enterprise.automation.tests.AmazonHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" started-at="2026-09-22T20:40:34 IST" name="setUp" finished-at="2026-09-22T20:40:42 IST" duration-ms="7363" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" started-at="2026-10-12T12:28:18 IST" name="setUp" finished-at="2026-10-12T12:28:22 IST" duration-ms="3301" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -64,15 +129,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" started-at="2026-09-22T20:40:42 IST" name="verifyAmazonHomePageTitle" description="Verify that the Amazon India home page loads and exposes the expected title" finished-at="2026-09-22T20:40:49 IST" duration-ms="7127" status="PASS">
+        <test-method signature="verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" started-at="2026-10-12T12:28:22 IST" name="verifyAmazonHomePageTitle" description="Verify that the Amazon India home page loads and exposes the expected title" finished-at="2026-10-12T12:28:26 IST" duration-ms="3843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAmazonHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b]" started-at="2026-09-22T20:40:52 IST" name="tearDown" finished-at="2026-09-22T20:40:54 IST" duration-ms="2602" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977]" started-at="2026-10-12T12:28:26 IST" name="tearDown" finished-at="2026-10-12T12:28:27 IST" duration-ms="147" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@4b85880b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHomePageTitle()[pri:1, instance:com.enterprise.automation.tests.AmazonHomePageTest@40dd3977] output={null}]]]>
               </value>
             </param>
           </params>
@@ -80,8 +145,8 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.AmazonHomePageTest -->
-      <class name="com.enterprise.automation.tests.FlipkartHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" started-at="2026-09-22T20:40:34 IST" name="setUp" finished-at="2026-09-22T20:40:42 IST" duration-ms="7331" status="PASS">
+      <class name="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:32 IST" name="setUp" finished-at="2026-10-12T12:28:32 IST" duration-ms="582" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -90,15 +155,202 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" started-at="2026-09-22T20:40:42 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-09-22T20:41:07 IST" duration-ms="25411" status="PASS">
+        <test-method retried="true" signature="verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:32 IST" name="verifyWikipediaPortalTaglineInTitle" description="Verify that the Wikipedia portal title contains the tagline &#039;The Free Encyclopedia&#039;" finished-at="2026-10-12T12:28:33 IST" duration-ms="536" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFlipkartHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df]" started-at="2026-09-22T20:41:08 IST" name="tearDown" finished-at="2026-09-22T20:41:09 IST" duration-ms="466" status="PASS">
+        </test-method> <!-- verifyWikipediaPortalTaglineInTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:33 IST" name="tearDown" finished-at="2026-10-12T12:28:33 IST" duration-ms="224" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SUCCESS method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@5b6813df] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWikipediaPortalTaglineInTitle status=SKIP method=WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:33 IST" name="setUp" finished-at="2026-10-12T12:28:34 IST" duration-ms="813" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:34 IST" name="verifyWikipediaPortalTaglineInTitle" description="Verify that the Wikipedia portal title contains the tagline &#039;The Free Encyclopedia&#039;" finished-at="2026-10-12T12:28:35 IST" duration-ms="557" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaPortalTaglineInTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:35 IST" name="tearDown" finished-at="2026-10-12T12:28:35 IST" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaPortalTaglineInTitle status=SKIP method=WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:35 IST" name="setUp" finished-at="2026-10-12T12:28:36 IST" duration-ms="707" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:36 IST" name="verifyWikipediaPortalTaglineInTitle" description="Verify that the Wikipedia portal title contains the tagline &#039;The Free Encyclopedia&#039;" finished-at="2026-10-12T12:28:36 IST" duration-ms="735" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = 'The Free Encyclopedia' | actual title = 'Wikipedia' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaPortalTaglineInTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d]" started-at="2026-10-12T12:28:37 IST" name="tearDown" finished-at="2026-10-12T12:28:37 IST" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaPortalTaglineInTitle status=FAILURE method=WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle()[pri:9, instance:com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest@389adf1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest -->
+      <class name="com.enterprise.automation.tests.SeleniumDocumentationPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098]" started-at="2026-10-12T12:28:30 IST" name="setUp" finished-at="2026-10-12T12:28:31 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySeleniumDocumentationPage()[pri:8, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098]" started-at="2026-10-12T12:28:31 IST" name="verifySeleniumDocumentationPage" description="Verify that the Selenium Documentation page loads with its heading and title" finished-at="2026-10-12T12:28:32 IST" duration-ms="984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumDocumentationPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098]" started-at="2026-10-12T12:28:32 IST" name="tearDown" finished-at="2026-10-12T12:28:32 IST" duration-ms="137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumDocumentationPage status=SUCCESS method=SeleniumDocumentationPageTest.verifySeleniumDocumentationPage()[pri:8, instance:com.enterprise.automation.tests.SeleniumDocumentationPageTest@7bf9b098] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.SeleniumDocumentationPageTest -->
+      <class name="com.enterprise.automation.tests.FlipkartHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" started-at="2026-10-12T12:28:18 IST" name="setUp" finished-at="2026-10-12T12:28:22 IST" duration-ms="3298" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" started-at="2026-10-12T12:28:22 IST" name="verifyFlipkartHomePageTitle" description="Verify that the Flipkart home page loads and exposes the expected title" finished-at="2026-10-12T12:28:43 IST" duration-ms="21756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFlipkartHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8]" started-at="2026-10-12T12:28:44 IST" name="tearDown" finished-at="2026-10-12T12:28:44 IST" duration-ms="223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFlipkartHomePageTitle status=SUCCESS method=FlipkartHomePageTest.verifyFlipkartHomePageTitle()[pri:2, instance:com.enterprise.automation.tests.FlipkartHomePageTest@37ebc9d8] output={null}]]]>
               </value>
             </param>
           </params>
@@ -106,8 +358,8 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.FlipkartHomePageTest -->
-      <class name="com.enterprise.automation.tests.SeleniumHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" started-at="2026-09-22T20:40:34 IST" name="setUp" finished-at="2026-09-22T20:40:42 IST" duration-ms="7312" status="PASS">
+      <class name="com.enterprise.automation.tests.WikipediaLanguageSelectorTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:28:27 IST" name="setUp" finished-at="2026-10-12T12:28:27 IST" duration-ms="912" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -116,15 +368,176 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" started-at="2026-09-22T20:40:42 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-09-22T20:41:00 IST" duration-ms="18648" status="PASS">
+        <test-method retried="true" signature="verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:28:27 IST" name="verifyWikipediaLanguageSelector" description="Verify the Wikipedia language selector and that English is a featured language" finished-at="2026-10-12T12:28:44 IST" duration-ms="16110" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia search language selector was not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySeleniumHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754]" started-at="2026-09-22T20:41:01 IST" name="tearDown" finished-at="2026-09-22T20:41:02 IST" duration-ms="1001" status="PASS">
+        </test-method> <!-- verifyWikipediaLanguageSelector -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:28:44 IST" name="tearDown" finished-at="2026-10-12T12:28:44 IST" duration-ms="322" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SUCCESS method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2b58f754] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWikipediaLanguageSelector status=SKIP method=WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:28:44 IST" name="setUp" finished-at="2026-10-12T12:28:45 IST" duration-ms="661" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:28:45 IST" name="verifyWikipediaLanguageSelector" description="Verify the Wikipedia language selector and that English is a featured language" finished-at="2026-10-12T12:29:00 IST" duration-ms="15742" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia search language selector was not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaLanguageSelector -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:29:00 IST" name="tearDown" finished-at="2026-10-12T12:29:01 IST" duration-ms="155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaLanguageSelector status=SKIP method=WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:29:01 IST" name="setUp" finished-at="2026-10-12T12:29:01 IST" duration-ms="555" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:29:01 IST" name="verifyWikipediaLanguageSelector" description="Verify the Wikipedia language selector and that English is a featured language" finished-at="2026-10-12T12:29:17 IST" duration-ms="15985" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The Wikipedia search language selector was not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWikipediaLanguageSelector -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f]" started-at="2026-10-12T12:29:17 IST" name="tearDown" finished-at="2026-10-12T12:29:17 IST" duration-ms="155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWikipediaLanguageSelector status=FAILURE method=WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector()[pri:6, instance:com.enterprise.automation.tests.WikipediaLanguageSelectorTest@6e9319f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.WikipediaLanguageSelectorTest -->
+      <class name="com.enterprise.automation.tests.SeleniumHomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" started-at="2026-10-12T12:28:18 IST" name="setUp" finished-at="2026-10-12T12:28:22 IST" duration-ms="3305" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" started-at="2026-10-12T12:28:22 IST" name="verifySeleniumHomePageTitle" description="Verify that the Selenium project site loads and exposes the expected title" finished-at="2026-10-12T12:28:40 IST" duration-ms="18148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumHomePageTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51]" started-at="2026-10-12T12:28:40 IST" name="tearDown" finished-at="2026-10-12T12:28:40 IST" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumHomePageTitle status=SUCCESS method=SeleniumHomePageTest.verifySeleniumHomePageTitle()[pri:4, instance:com.enterprise.automation.tests.SeleniumHomePageTest@2416a51] output={null}]]]>
               </value>
             </param>
           </params>
@@ -132,6 +545,32 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.enterprise.automation.tests.SeleniumHomePageTest -->
+      <class name="com.enterprise.automation.tests.SeleniumHeroSectionTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77]" started-at="2026-10-12T12:28:28 IST" name="setUp" finished-at="2026-10-12T12:28:29 IST" duration-ms="570" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySeleniumHeroSection()[pri:7, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77]" started-at="2026-10-12T12:28:29 IST" name="verifySeleniumHeroSection" description="Verify the selenium.dev hero heading and Downloads entry point" finished-at="2026-10-12T12:28:30 IST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySeleniumHeroSection -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77]" started-at="2026-10-12T12:28:30 IST" name="tearDown" finished-at="2026-10-12T12:28:30 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySeleniumHeroSection status=SUCCESS method=SeleniumHeroSectionTest.verifySeleniumHeroSection()[pri:7, instance:com.enterprise.automation.tests.SeleniumHeroSectionTest@72e34f77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.enterprise.automation.tests.SeleniumHeroSectionTest -->
     </test> <!-- WebRegressionSuite -->
   </suite> <!-- EnterpriseAutomationSuite -->
 </testng-results>

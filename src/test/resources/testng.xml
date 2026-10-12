@@ -21,6 +21,8 @@
     <listeners>
         <listener class-name="com.enterprise.automation.listeners.TestListener"/>
         <listener class-name="com.enterprise.automation.listeners.RetryTransformer"/>
+        <!-- Posts the final result of every test to Zephyr Essential after the suite (see ZEPHYR_SETUP.md) -->
+        <listener class-name="com.enterprise.automation.zephyr.ZephyrListener"/>
     </listeners>
 
     <test name="WebRegressionSuite" preserve-order="false">
@@ -30,6 +32,12 @@
             <class name="com.enterprise.automation.tests.FlipkartHomePageTest"/>
             <class name="com.enterprise.automation.tests.WikipediaHomePageTest"/>
             <class name="com.enterprise.automation.tests.SeleniumHomePageTest"/>
+            <class name="com.enterprise.automation.tests.WikipediaSearchTest"/>
+            <class name="com.enterprise.automation.tests.WikipediaLanguageSelectorTest"/>
+            <class name="com.enterprise.automation.tests.SeleniumHeroSectionTest"/>
+            <class name="com.enterprise.automation.tests.SeleniumDocumentationPageTest"/>
+            <class name="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest"/>
+            <class name="com.enterprise.automation.tests.SeleniumDownloadsPageTest"/>
         </classes>
 
     </test>
