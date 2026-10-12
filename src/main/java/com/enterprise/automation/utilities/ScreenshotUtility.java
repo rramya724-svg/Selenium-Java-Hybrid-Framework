@@ -9,25 +9,12 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
 
-/**
- * Captures browser screenshots as files and as Base64 payloads.
- *
- * <p>File names embed the test name, the executing thread and a millisecond
- * timestamp, which guarantees uniqueness under {@code parallel="methods"}.
- * Every method degrades gracefully: a screenshot failure is logged but never
- * masks the real test failure.</p>
- *
- * @author Lalith Kumar BV
- * @version 1.0
- */
 public final class ScreenshotUtility {
-
     private static final Logger LOGGER = LoggerUtility.getLogger(ScreenshotUtility.class);
     private static final String ILLEGAL_FILE_NAME_CHARACTERS = "[^a-zA-Z0-9._-]";
     private static final String REPLACEMENT_CHARACTER = "_";
@@ -36,12 +23,6 @@ public final class ScreenshotUtility {
         throw new IllegalStateException("ScreenshotUtility is a utility class and must not be instantiated");
     }
 
-    /**
-     * Captures the current viewport and writes it to the configured screenshot directory.
-     *
-     * @param testName logical name used to build the file name
-     * @return the absolute path of the written file, empty when capture failed
-     */
     public static Optional<String> captureToFile(String testName) {
         if (!DriverManager.isDriverInitialised()) {
             LOGGER.warn("Screenshot skipped for [{}] : no driver bound to this thread", testName);
@@ -50,13 +31,10 @@ public final class ScreenshotUtility {
         try {
             WebDriver driver = DriverManager.getDriver();
             byte[] imageBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-
             Path targetDirectory = screenshotDirectory();
             Files.createDirectories(targetDirectory);
-
             Path targetFile = targetDirectory.resolve(buildFileName(testName));
             Files.write(targetFile, imageBytes);
-
             String absolutePath = targetFile.toAbsolutePath().toString();
             LOGGER.info("Screenshot captured for [{}] -> {}", testName, absolutePath);
             return Optional.of(absolutePath);
@@ -69,12 +47,6 @@ public final class ScreenshotUtility {
         }
     }
 
-    /**
-     * Captures the current viewport as a Base64 string suitable for embedding
-     * directly inside the Extent report.
-     *
-     * @return the Base64 payload, empty when capture failed
-     */
     public static Optional<String> captureAsBase64() {
         if (!DriverManager.isDriverInitialised()) {
             return Optional.empty();
@@ -88,9 +60,6 @@ public final class ScreenshotUtility {
         }
     }
 
-    /**
-     * @return the absolute screenshot directory resolved from configuration
-     */
     public static Path screenshotDirectory() {
         String configured = ConfigReader.get(ConfigKey.SCREENSHOT_PATH, "test-output/Screenshots");
         Path path = Path.of(configured);

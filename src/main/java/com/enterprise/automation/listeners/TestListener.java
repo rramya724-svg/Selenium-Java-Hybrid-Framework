@@ -18,31 +18,14 @@ import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.util.Optional;
 
-/**
- * Central execution listener: drives Extent reporting, screenshot capture,
- * Excel result write back, the console summary banner and the notification email.
- *
- * <p>Keeping every cross cutting concern here means test classes contain only
- * business steps, which is the single most valuable property of the design.</p>
- *
- * @author Lalith Kumar BV
- * @version 1.0
- */
 public class TestListener implements ITestListener, ISuiteListener {
-
     private static final Logger LOGGER = LoggerUtility.getLogger(TestListener.class);
-
     private static final String BANNER_LINE =
             "==============================================================================";
     private static final String TEST_CASE_ID_ATTRIBUTE = "testCaseId";
     private static final String START_MILLIS_ATTRIBUTE = "startMillis";
-
-    /* ------------------------------------------------------------------ */
-    /* Suite level                                                         */
-    /* ------------------------------------------------------------------ */
 
     @Override
     public void onStart(ISuite suite) {
@@ -55,6 +38,7 @@ public class TestListener implements ITestListener, ISuiteListener {
         LOGGER.info("Headless      : {}", ConfigReader.getBoolean(ConfigKey.HEADLESS, false));
         LOGGER.info("Started At    : {}", DateUtility.currentDisplayTimestamp());
         LOGGER.info(BANNER_LINE);
+        EmailUtility.sendExecutionStarted(suite.getName(), suite.getAllMethods().size());
     }
 
     @Override
@@ -65,22 +49,15 @@ public class TestListener implements ITestListener, ISuiteListener {
         EmailUtility.sendExecutionReport();
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Test level                                                          */
-    /* ------------------------------------------------------------------ */
-
     @Override
     public void onTestStart(ITestResult result) {
         result.setAttribute(START_MILLIS_ATTRIBUTE, System.currentTimeMillis());
-
         String testName = result.getMethod().getMethodName();
         String description = Optional.ofNullable(result.getMethod().getDescription())
                                      .orElse(FrameworkConstants.EMPTY_STRING);
-
         ExtentTestManager.startTest(testName, description);
         ExtentTestManager.assignCategories(result.getTestClass().getRealClass().getSimpleName());
         ExtentTestManager.logInfo("Execution started on thread [" + Thread.currentThread().getName() + "]");
-
         LOGGER.info("TEST STARTED : {} on thread [{}]", testName, Thread.currentThread().getName());
     }
 
@@ -88,14 +65,11 @@ public class TestListener implements ITestListener, ISuiteListener {
     public void onTestSuccess(ITestResult result) {
         long elapsed = elapsedMillis(result);
         ExecutionSummary.incrementPassed();
-
         ExtentTestManager.logPass("Test passed in " + DateUtility.formatDuration(elapsed));
-
         String screenshotPath = null;
         if (ConfigReader.getBoolean(ConfigKey.SCREENSHOT_ON_SUCCESS, true)) {
             screenshotPath = captureAndAttach(result, Status.PASS, "Screenshot on success");
         }
-
         writeResultToExcel(result, FrameworkConstants.STATUS_PASS, elapsed, screenshotPath);
         LOGGER.info("TEST PASSED  : {} | duration = {}",
                 result.getMethod().getMethodName(), DateUtility.formatDuration(elapsed));
@@ -105,15 +79,12 @@ public class TestListener implements ITestListener, ISuiteListener {
     public void onTestFailure(ITestResult result) {
         long elapsed = elapsedMillis(result);
         ExecutionSummary.incrementFailed();
-
         ExtentTestManager.logFail("Test failed in " + DateUtility.formatDuration(elapsed));
         ExtentTestManager.logThrowable(result.getThrowable());
-
         String screenshotPath = null;
         if (ConfigReader.getBoolean(ConfigKey.SCREENSHOT_ON_FAILURE, true)) {
             screenshotPath = captureAndAttach(result, Status.FAIL, "Screenshot on failure");
         }
-
         writeResultToExcel(result, FrameworkConstants.STATUS_FAIL, elapsed, screenshotPath);
         LOGGER.error("TEST FAILED  : {} | duration = {}",
                 result.getMethod().getMethodName(), DateUtility.formatDuration(elapsed), result.getThrowable());
@@ -123,12 +94,10 @@ public class TestListener implements ITestListener, ISuiteListener {
     public void onTestSkipped(ITestResult result) {
         long elapsed = elapsedMillis(result);
         ExecutionSummary.incrementSkipped();
-
         ExtentTestManager.logSkip("Test skipped");
         if (result.getThrowable() != null) {
             ExtentTestManager.logThrowable(result.getThrowable());
         }
-
         writeResultToExcel(result, FrameworkConstants.STATUS_SKIP, elapsed, null);
         LOGGER.warn("TEST SKIPPED : {}", result.getMethod().getMethodName());
     }
@@ -149,16 +118,10 @@ public class TestListener implements ITestListener, ISuiteListener {
                 context.getSkippedTests().size());
     }
 
-    /* ------------------------------------------------------------------ */
-    /* Helpers                                                             */
-    /* ------------------------------------------------------------------ */
-
     private String captureAndAttach(ITestResult result, Status status, String caption) {
         String testName = result.getMethod().getMethodName();
-
         ScreenshotUtility.captureAsBase64()
                 .ifPresent(base64 -> ExtentTestManager.attachBase64Screenshot(status, base64, caption));
-
         return ScreenshotUtility.captureToFile(testName).orElse(null);
     }
 

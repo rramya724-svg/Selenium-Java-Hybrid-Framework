@@ -4,16 +4,24 @@
   <listeners>
     <listener class-name="com.enterprise.automation.listeners.TestListener"/>
     <listener class-name="com.enterprise.automation.listeners.RetryTransformer"/>
+    <listener class-name="com.enterprise.automation.zephyr.ZephyrListener"/>
   </listeners>
   <test thread-count="4" parallel="methods" name="WebRegressionSuite(failed)">
     <classes>
-      <class name="com.enterprise.automation.tests.FlipkartHomePageTest">
+      <class name="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyFlipkartHomePageTitle"/>
+          <include name="verifyWikipediaPortalTaglineInTitle"/>
         </methods>
-      </class> <!-- com.enterprise.automation.tests.FlipkartHomePageTest -->
+      </class> <!-- com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest -->
+      <class name="com.enterprise.automation.tests.WikipediaLanguageSelectorTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyWikipediaLanguageSelector"/>
+        </methods>
+      </class> <!-- com.enterprise.automation.tests.WikipediaLanguageSelectorTest -->
     </classes>
   </test> <!-- WebRegressionSuite(failed) -->
 </suite> <!-- Failed suite [EnterpriseAutomationSuite] -->

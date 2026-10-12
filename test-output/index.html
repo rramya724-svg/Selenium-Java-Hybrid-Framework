@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-EnterpriseAutomationSuite" class="navigator-link">
-              <span class="suite-name border-passed">EnterpriseAutomationSuite</span>
+              <span class="suite-name border-failed">EnterpriseAutomationSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,55 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,  4 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EnterpriseAutomationSuite" class="hide-methods failed suite-EnterpriseAutomationSuite"> (hide)</a> <!-- hide-methods failed suite-EnterpriseAutomationSuite -->
+                      <a href="#" panel-name="suite-EnterpriseAutomationSuite" class="show-methods failed suite-EnterpriseAutomationSuite"> (show)</a> <!-- show-methods failed suite-EnterpriseAutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EnterpriseAutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaLanguageSelectorTest" class="method navigator-link" hash-for-method="verifyWikipediaLanguageSelector">verifyWikipediaLanguageSelector</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest" class="method navigator-link" hash-for-method="verifyWikipediaPortalTaglineInTitle">verifyWikipediaPortalTaglineInTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EnterpriseAutomationSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-EnterpriseAutomationSuite" class="hide-methods skipped suite-EnterpriseAutomationSuite"> (hide)</a> <!-- hide-methods skipped suite-EnterpriseAutomationSuite -->
+                      <a href="#" panel-name="suite-EnterpriseAutomationSuite" class="show-methods skipped suite-EnterpriseAutomationSuite"> (show)</a> <!-- show-methods skipped suite-EnterpriseAutomationSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-EnterpriseAutomationSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaLanguageSelectorTest" class="method navigator-link" hash-for-method="verifyWikipediaLanguageSelector">verifyWikipediaLanguageSelector</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaLanguageSelectorTest" class="method navigator-link" hash-for-method="verifyWikipediaLanguageSelector">verifyWikipediaLanguageSelector</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest" class="method navigator-link" hash-for-method="verifyWikipediaPortalTaglineInTitle">verifyWikipediaPortalTaglineInTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest" class="method navigator-link" hash-for-method="verifyWikipediaPortalTaglineInTitle">verifyWikipediaPortalTaglineInTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-EnterpriseAutomationSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,7 +161,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.SeleniumDocumentationPageTest" class="method navigator-link" hash-for-method="verifySeleniumDocumentationPage">verifySeleniumDocumentationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.SeleniumDownloadsPageTest" class="method navigator-link" hash-for-method="verifySeleniumDownloadsPageTitle">verifySeleniumDownloadsPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.SeleniumHeroSectionTest" class="method navigator-link" hash-for-method="verifySeleniumHeroSection">verifySeleniumHeroSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.SeleniumHomePageTest" class="method navigator-link" hash-for-method="verifySeleniumHomePageTitle">verifySeleniumHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EnterpriseAutomationSuite" title="com.enterprise.automation.tests.WikipediaSearchTest" class="method navigator-link" hash-for-method="verifyWikipediaArticleSearch">verifyWikipediaArticleSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,19 +201,193 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-EnterpriseAutomationSuite" class="panel EnterpriseAutomationSuite">
-          <div class="suite-EnterpriseAutomationSuite-class-passed">
+          <div class="suite-EnterpriseAutomationSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.enterprise.automation.tests.FlipkartHomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFlipkartHomePageTitle">
-                  </a> <!-- verifyFlipkartHomePageTitle -->
-                  <span class="method-name">verifyFlipkartHomePageTitle</span>
+                  <a name="verifyWikipediaPortalTaglineInTitle">
+                  </a> <!-- verifyWikipediaPortalTaglineInTitle -->
+                  <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = &apos;The Free Encyclopedia&apos; | actual title = &apos;Wikipedia&apos; expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify that the Flipkart home page loads and exposes the expected title)                  </em>
+(Verify that the Wikipedia portal title contains the tagline 'The Free Encyclopedia')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-failed -->
+          <div class="suite-EnterpriseAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.WikipediaLanguageSelectorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaLanguageSelector">
+                  </a> <!-- verifyWikipediaLanguageSelector -->
+                  <span class="method-name">verifyWikipediaLanguageSelector</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the Wikipedia language selector and that English is a featured language)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-failed -->
+          <div class="suite-EnterpriseAutomationSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaPortalTaglineInTitle">
+                  </a> <!-- verifyWikipediaPortalTaglineInTitle -->
+                  <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = &apos;The Free Encyclopedia&apos; | actual title = &apos;Wikipedia&apos; expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the Wikipedia portal title contains the tagline 'The Free Encyclopedia')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaPortalTaglineInTitle">
+                  </a> <!-- verifyWikipediaPortalTaglineInTitle -->
+                  <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia portal title did not contain the expected tagline | expected fragment = &apos;The Free Encyclopedia&apos; | actual title = &apos;Wikipedia&apos; expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest.verifyWikipediaPortalTaglineInTitle(WikipediaPortalTaglineTitleTest.java:36)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that the Wikipedia portal title contains the tagline 'The Free Encyclopedia')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-skipped -->
+          <div class="suite-EnterpriseAutomationSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.enterprise.automation.tests.WikipediaLanguageSelectorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaLanguageSelector">
+                  </a> <!-- verifyWikipediaLanguageSelector -->
+                  <span class="method-name">verifyWikipediaLanguageSelector</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the Wikipedia language selector and that English is a featured language)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaLanguageSelector">
+                  </a> <!-- verifyWikipediaLanguageSelector -->
+                  <span class="method-name">verifyWikipediaLanguageSelector</span>
+                  <div class="stack-trace">java.lang.AssertionError: The Wikipedia search language selector was not displayed expected [true] but found [false]
+	at com.enterprise.automation.tests.WikipediaLanguageSelectorTest.verifyWikipediaLanguageSelector(WikipediaLanguageSelectorTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the Wikipedia language selector and that English is a featured language)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-skipped -->
+          <div class="suite-EnterpriseAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.SeleniumHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySeleniumHomePageTitle">
+                  </a> <!-- verifySeleniumHomePageTitle -->
+                  <span class="method-name">verifySeleniumHomePageTitle</span>
+                  <em>
+(Verify that the Selenium project site loads and exposes the expected title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-passed -->
+          <div class="suite-EnterpriseAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.SeleniumDownloadsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySeleniumDownloadsPageTitle">
+                  </a> <!-- verifySeleniumDownloadsPageTitle -->
+                  <span class="method-name">verifySeleniumDownloadsPageTitle</span>
+                  <em>
+(Verify that the Selenium Downloads page title reads 'Downloads Center')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-passed -->
+          <div class="suite-EnterpriseAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.SeleniumDocumentationPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySeleniumDocumentationPage">
+                  </a> <!-- verifySeleniumDocumentationPage -->
+                  <span class="method-name">verifySeleniumDocumentationPage</span>
+                  <em>
+(Verify that the Selenium Documentation page loads with its heading and title)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,16 +412,50 @@
           <div class="suite-EnterpriseAutomationSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.enterprise.automation.tests.SeleniumHomePageTest</span>
+              <span class="class-name">com.enterprise.automation.tests.SeleniumHeroSectionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySeleniumHomePageTitle">
-                  </a> <!-- verifySeleniumHomePageTitle -->
-                  <span class="method-name">verifySeleniumHomePageTitle</span>
+                  <a name="verifySeleniumHeroSection">
+                  </a> <!-- verifySeleniumHeroSection -->
+                  <span class="method-name">verifySeleniumHeroSection</span>
                   <em>
-(Verify that the Selenium project site loads and exposes the expected title)                  </em>
+(Verify the selenium.dev hero heading and Downloads entry point)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-passed -->
+          <div class="suite-EnterpriseAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.FlipkartHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFlipkartHomePageTitle">
+                  </a> <!-- verifyFlipkartHomePageTitle -->
+                  <span class="method-name">verifyFlipkartHomePageTitle</span>
+                  <em>
+(Verify that the Flipkart home page loads and exposes the expected title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EnterpriseAutomationSuite-class-passed -->
+          <div class="suite-EnterpriseAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.enterprise.automation.tests.WikipediaSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaArticleSearch">
+                  </a> <!-- verifyWikipediaArticleSearch -->
+                  <span class="method-name">verifyWikipediaArticleSearch</span>
+                  <em>
+(Verify that searching from the Wikipedia portal opens the matching article)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,6 +490,7 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.enterprise.automation.listeners.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;com.enterprise.automation.listeners.RetryTransformer&quot;/&gt;
+    &lt;listener class-name=&quot;com.enterprise.automation.zephyr.ZephyrListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;WebRegressionSuite&quot; preserve-order=&quot;false&quot;&gt;
     &lt;classes&gt;
@@ -221,6 +498,12 @@
       &lt;class name=&quot;com.enterprise.automation.tests.FlipkartHomePageTest&quot;/&gt;
       &lt;class name=&quot;com.enterprise.automation.tests.WikipediaHomePageTest&quot;/&gt;
       &lt;class name=&quot;com.enterprise.automation.tests.SeleniumHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.WikipediaSearchTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.WikipediaLanguageSelectorTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.SeleniumHeroSectionTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.SeleniumDocumentationPageTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest&quot;/&gt;
+      &lt;class name=&quot;com.enterprise.automation.tests.SeleniumDownloadsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- WebRegressionSuite --&gt;
 &lt;/suite&gt; &lt;!-- EnterpriseAutomationSuite --&gt;
@@ -234,7 +517,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">WebRegressionSuite (4 classes)</span>
+                <span class="test-name">WebRegressionSuite (10 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,7 +531,19 @@
               <span class="test-group-name">content</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaArticleSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyWikipediaHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaLanguageSelector</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaPortalTaglineInTitle</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -276,11 +571,35 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumDocumentationPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumDownloadsPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumHeroSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifySeleniumHomePageTitle</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaArticleSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyWikipediaHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaLanguageSelector</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaPortalTaglineInTitle</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -300,6 +619,10 @@
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">verifyWikipediaArticleSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyWikipediaHomePageTitle</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -307,6 +630,18 @@
             <div class="test-group">
               <span class="test-group-name">tooling</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumDocumentationPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumDownloadsPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySeleniumHeroSection</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">verifySeleniumHomePageTitle</span>
                 <br/>
@@ -328,28 +663,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyFlipkartHomePageTitle')
 data.setCell(0, 2, 'com.enterprise.automation.tests.FlipkartHomePageTest')
-data.setCell(0, 3, 25411);
+data.setCell(0, 3, 21756);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifySeleniumHomePageTitle')
 data.setCell(1, 2, 'com.enterprise.automation.tests.SeleniumHomePageTest')
-data.setCell(1, 3, 18648);
+data.setCell(1, 3, 18148);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyAmazonHomePageTitle')
-data.setCell(2, 2, 'com.enterprise.automation.tests.AmazonHomePageTest')
-data.setCell(2, 3, 7127);
+data.setCell(2, 1, 'verifyWikipediaLanguageSelector')
+data.setCell(2, 2, 'com.enterprise.automation.tests.WikipediaLanguageSelectorTest')
+data.setCell(2, 3, 16110);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyWikipediaHomePageTitle')
-data.setCell(3, 2, 'com.enterprise.automation.tests.WikipediaHomePageTest')
-data.setCell(3, 3, 4414);
+data.setCell(3, 1, 'verifyWikipediaLanguageSelector')
+data.setCell(3, 2, 'com.enterprise.automation.tests.WikipediaLanguageSelectorTest')
+data.setCell(3, 3, 15985);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyWikipediaLanguageSelector')
+data.setCell(4, 2, 'com.enterprise.automation.tests.WikipediaLanguageSelectorTest')
+data.setCell(4, 3, 15742);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAmazonHomePageTitle')
+data.setCell(5, 2, 'com.enterprise.automation.tests.AmazonHomePageTest')
+data.setCell(5, 3, 3843);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyWikipediaArticleSearch')
+data.setCell(6, 2, 'com.enterprise.automation.tests.WikipediaSearchTest')
+data.setCell(6, 3, 2948);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyWikipediaHomePageTitle')
+data.setCell(7, 2, 'com.enterprise.automation.tests.WikipediaHomePageTest')
+data.setCell(7, 3, 1624);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifySeleniumDownloadsPageTitle')
+data.setCell(8, 2, 'com.enterprise.automation.tests.SeleniumDownloadsPageTest')
+data.setCell(8, 3, 1121);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifySeleniumDocumentationPage')
+data.setCell(9, 2, 'com.enterprise.automation.tests.SeleniumDocumentationPageTest')
+data.setCell(9, 3, 984);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyWikipediaPortalTaglineInTitle')
+data.setCell(10, 2, 'com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest')
+data.setCell(10, 3, 735);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifySeleniumHeroSection')
+data.setCell(11, 2, 'com.enterprise.automation.tests.SeleniumHeroSectionTest')
+data.setCell(11, 3, 728);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyWikipediaPortalTaglineInTitle')
+data.setCell(12, 2, 'com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest')
+data.setCell(12, 3, 557);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyWikipediaPortalTaglineInTitle')
+data.setCell(13, 2, 'com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest')
+data.setCell(13, 3, 536);
 window.suiteTableData['EnterpriseAutomationSuite']= { tableData: data, tableDiv: 'times-div-EnterpriseAutomationSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-EnterpriseAutomationSuite">
               </div> <!-- times-div-EnterpriseAutomationSuite -->
             </div> <!-- times-div -->
@@ -375,7 +750,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.enterprise.automation.tests.AmazonHomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
                 <span class="method-start">0 ms</span>
@@ -389,73 +771,217 @@ return data;
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaHomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.enterprise.automation.tests.AmazonHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(null)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(null)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.enterprise.automation.tests.AmazonHomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyAmazonHomePageTitle</span>
-                <span class="method-start">7529 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifySeleniumHomePageTitle</span>
-                <span class="method-start">7529 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaHomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyWikipediaHomePageTitle</span>
-                <span class="method-start">7529 ms</span>
+                <span class="method-start">3404 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.FlipkartHomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyFlipkartHomePageTitle</span>
-                <span class="method-start">7529 ms</span>
+                <span class="method-start">3404 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.AmazonHomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAmazonHomePageTitle</span>
+                <span class="method-start">3404 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySeleniumHomePageTitle</span>
+                <span class="method-start">3405 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyWikipediaHomePageTitle status=SUCCESS method=WikipediaHomePageTest.verifyWiki...)</span>
-                <span class="method-start">13177 ms</span>
+                <span class="method-start">5542 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">5709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaArticleSearch</span>
+                <span class="method-start">6389 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.AmazonHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyAmazonHomePageTitle status=SUCCESS method=AmazonHomePageTest.verifyAmazonHome...)</span>
-                <span class="method-start">17581 ms</span>
+                <span class="method-start">8063 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaLanguageSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">8214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaLanguageSelector</span>
+                <span class="method-start">9130 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaArticleSearch status=SUCCESS method=WikipediaSearchTest.verifyWikipe...)</span>
+                <span class="method-start">9691 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHeroSectionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">9920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySeleniumHeroSection</span>
+                <span class="method-start">10492 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySeleniumHeroSection status=SUCCESS method=SeleniumHeroSectionTest.verifySelen...)</span>
+                <span class="method-start">11468 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumDocumentationPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">11609 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySeleniumDocumentationPage</span>
+                <span class="method-start">12248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySeleniumDocumentationPage status=SUCCESS method=SeleniumDocumentationPageTest...)</span>
+                <span class="method-start">13461 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaPortalTaglineTitleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">13601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                <span class="method-start">14186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaPortalTaglineInTitle status=SKIP method=WikipediaPortalTaglineTitleT...)</span>
+                <span class="method-start">14791 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">15019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                <span class="method-start">15834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaPortalTaglineInTitle status=SKIP method=WikipediaPortalTaglineTitleT...)</span>
+                <span class="method-start">16427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">16565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWikipediaPortalTaglineInTitle</span>
+                <span class="method-start">17274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaPortalTaglineInTitle status=FAILURE method=WikipediaPortalTaglineTit...)</span>
+                <span class="method-start">18434 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumDownloadsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">18680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySeleniumDownloadsPageTitle</span>
+                <span class="method-start">19448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifySeleniumDownloadsPageTitle status=SUCCESS method=SeleniumDownloadsPageTest.ve...)</span>
+                <span class="method-start">20838 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.SeleniumHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifySeleniumHomePageTitle status=SUCCESS method=SeleniumHomePageTest.verifySeleni...)</span>
-                <span class="method-start">26611 ms</span>
+                <span class="method-start">21805 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaLanguageSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaLanguageSelector status=SKIP method=WikipediaLanguageSelectorTest.ve...)</span>
+                <span class="method-start">25284 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">25607 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.enterprise.automation.tests.FlipkartHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=verifyFlipkartHomePageTitle status=SUCCESS method=FlipkartHomePageTest.verifyFlipka...)</span>
-                <span class="method-start">33852 ms</span>
+                <span class="method-start">25803 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.enterprise.automation.tests.WikipediaLanguageSelectorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaLanguageSelector</span>
+                <span class="method-start">26271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaLanguageSelector status=SKIP method=WikipediaLanguageSelectorTest.ve...)</span>
+                <span class="method-start">42052 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(null)</span>
+                <span class="method-start">42209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWikipediaLanguageSelector</span>
+                <span class="method-start">42766 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyWikipediaLanguageSelector status=FAILURE method=WikipediaLanguageSelectorTest...)</span>
+                <span class="method-start">58946 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
