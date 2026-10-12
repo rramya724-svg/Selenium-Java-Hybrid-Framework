@@ -49,9 +49,14 @@ public void verifyAmazonHomePageTitle() { ... }
 
 ### 1. Give the framework your API token
 
-The token is **not** stored in the project. You already have one. To make a
-new one, open the **Zephyr API Access Tokens** page in Jira. Then use one of
-these options.
+To make a token, open the **Zephyr API Access Tokens** page in Jira.
+
+**In the project (works on any PC and in Jenkins):** paste it after
+`zephyr.api.token=` in `src/test/resources/config.properties`. This value is
+used before the environment variable, so each project carries its own access.
+Anyone who can read the file can use the token, so keep the GitHub repository
+**private**. The other options below are only for keeping the token out of the
+project.
 
 **Windows (recommended):** open Command Prompt and run:
 
@@ -123,6 +128,7 @@ You can override any of these for one run with `-Dkey=value`.
 | `zephyr.test.cycle.name.prefix` | `Automation Run` | The first part of each new cycle's name. Only used when `zephyr.test.cycle.key` is blank. |
 | `zephyr.manual.test.cases` | `SCRUM-T7,SCRUM-T8` | Manual test cases added to the cycle as Not Executed. In an existing cycle they're added only if they aren't in it yet. |
 | `zephyr.auto.create.test.cases` | `true` | Only affects new tests without `@ZephyrTestCase` (see below). |
+| `zephyr.update.existing.execution` | `true` | In a fixed cycle, a test that already has a row gets that row updated instead of a new row added. If the update is refused, a new row is added. |
 | `zephyr.environment` | *(blank)* | Optional. Must match an environment in Zephyr's configuration. |
 | `zephyr.status.pass` / `.fail` / `.skip` / `.not.executed` | `Pass` / `Fail` / `Blocked` / `Not Executed` | Zephyr status names. Change these only if your project renamed them. |
 | `zephyr.timeout.seconds` | `30` | Timeout for each API call. |

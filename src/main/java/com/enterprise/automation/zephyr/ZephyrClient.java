@@ -39,6 +39,7 @@ public class ZephyrClient {
     private static final int HTTP_SERVER_ERROR = 500;
     private static final String GET = "GET";
     private static final String POST = "POST";
+    private static final String PUT = "PUT";
     private static final String KEY = "key";
     private final HttpClient httpClient;
     private final String baseUrl;
@@ -82,6 +83,38 @@ public class ZephyrClient {
 
     public JsonNode createTestExecution(Map<String, Object> body) {
         return execute(POST, "/testexecutions", body);
+    }
+
+    public JsonNode updateTestExecution(String executionId, Map<String, Object> body) {
+        return execute(PUT, "/testexecutions/" + encode(executionId), body, 1);
+    }
+
+    public JsonNode getTestExecution(String executionId) {
+        return execute(GET, "/testexecutions/" + encode(executionId), null, 1);
+    }
+
+    public Optional<String> findExecutionId(String projectKey, String testCycleKey, String testCaseKey) {
+        JsonNode response = execute(GET, "/testexecutions?projectKey=" + encode(projectKey)
+                + "&testCycle=" + encode(testCycleKey) + "&testCase=" + encode(testCaseKey)
+                + "&maxResults=50", null, 1);
+        JsonNode values = response.path("values");
+        if (!values.isArray()) {
+            return Optional.empty();
+        }
+        String best = "";
+        long bestNumber = Long.MIN_VALUE;
+        for (JsonNode execution : values) {
+            String id = execution.path("id").asText("");
+            if (id.isEmpty()) {
+                continue;
+            }
+            long number = id.matches("\\d+") ? Long.parseLong(id) : Long.MIN_VALUE + 1;
+            if (best.isEmpty() || number > bestNumber) {
+                best = id;
+                bestNumber = number;
+            }
+        }
+        return best.isEmpty() ? Optional.empty() : Optional.of(best);
     }
 
     public Map<String, String> listTestCaseKeysByName(String projectKey) {
@@ -132,6 +165,7 @@ public class ZephyrClient {
                 int status = response.statusCode();
                 LOGGER.info("Zephyr {} {} -> HTTP {} ({} ms)", method, path, status, elapsedMillis(started));
                 if (status >= 200 && status < 300) {
+                    LOGGER.debug("Zephyr {} {} response: {}", method, path, response.body());
                     return parse(method, url, response.body());
                 }
                 boolean retriable = status == HTTP_TOO_MANY_REQUESTS || status >= HTTP_SERVER_ERROR;

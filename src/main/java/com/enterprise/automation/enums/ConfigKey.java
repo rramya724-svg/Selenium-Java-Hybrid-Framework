@@ -44,6 +44,7 @@ public enum ConfigKey {
     ZEPHYR_TEST_CYCLE_KEY("zephyr.test.cycle.key"),
     ZEPHYR_TEST_CYCLE_NAME_PREFIX("zephyr.test.cycle.name.prefix"),
     ZEPHYR_AUTO_CREATE_TEST_CASES("zephyr.auto.create.test.cases"),
+    ZEPHYR_UPDATE_EXISTING_EXECUTION("zephyr.update.existing.execution"),
     ZEPHYR_ENVIRONMENT("zephyr.environment"),
     ZEPHYR_STATUS_PASS("zephyr.status.pass"),
     ZEPHYR_STATUS_FAIL("zephyr.status.fail"),

@@ -2,6 +2,7 @@ package com.enterprise.automation.zephyr;
 
 import com.enterprise.automation.utilities.LoggerUtility;
 import com.enterprise.automation.zephyr.ZephyrExecutionRecord.Outcome;
+import com.fasterxml.jackson.databind.JsonNode;
 import org.apache.logging.log4j.Logger;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -29,6 +30,7 @@ public final class ZephyrSyncService {
     private static final int HTTP_NOT_FOUND = 404;
     private static final int MAX_NAME_LENGTH = 255;
     private static final int MAX_FAILURE_LENGTH = 2_000;
+    private static final int MAX_ECHO_LENGTH = 700;
     private static final String SUMMARY_LINE = "  %-13s %-11s %s";
     private static final DateTimeFormatter CYCLE_TIMESTAMP =
             DateTimeFormatter.ofPattern("dd-MMM-yyyy HH:mm:ss", Locale.ENGLISH);
@@ -341,7 +343,7 @@ public final class ZephyrSyncService {
             }
         }
         try {
-            client.createTestExecution(body);
+            saveExecution(client, testCycleKey, testCaseKey, body);
         } catch (ZephyrApiException problem) {
             if (problem.statusCode() != HTTP_BAD_REQUEST || !hasOptionalFields) {
                 throw problem;
@@ -351,8 +353,60 @@ public final class ZephyrSyncService {
                     + "Check zephyr.environment matches an environment in Zephyr. {}", problem.getMessage());
             body.remove(ENVIRONMENT_NAME);
             body.remove(EXECUTED_BY_ID);
-            client.createTestExecution(body);
+            saveExecution(client, testCycleKey, testCaseKey, body);
         }
+    }
+
+    private void saveExecution(ZephyrClient client, String testCycleKey, String testCaseKey,
+                               Map<String, Object> body) {
+        Optional<String> existingId = Optional.empty();
+        if (settings.updateExistingExecution() && settings.usesFixedTestCycle()) {
+            try {
+                existingId = client.findExecutionId(settings.projectKey(), testCycleKey, testCaseKey);
+            } catch (ZephyrApiException lookupProblem) {
+                LOGGER.warn("Zephyr: could not look up the existing execution of [{}], a new one will be added. {}",
+                        testCaseKey, lookupProblem.getMessage());
+            }
+        }
+        if (existingId.isPresent()) {
+            Map<String, Object> update = new LinkedHashMap<>(body);
+            update.remove(PROJECT_KEY);
+            update.remove(TEST_CASE_KEY);
+            update.remove(TEST_CYCLE_KEY);
+            try {
+                JsonNode updated = client.updateTestExecution(existingId.get(), update);
+                LOGGER.info("Zephyr: [{}] updated existing execution {} in [{}]; PUT answered: {}", testCaseKey,
+                        existingId.get(), testCycleKey, shorten(updated));
+                readBack(client, existingId.get());
+                return;
+            } catch (ZephyrApiException updateProblem) {
+                if (updateProblem.statusCode() == HTTP_BAD_REQUEST) {
+                    throw updateProblem;
+                }
+                LOGGER.warn("Zephyr: could not update execution {} of [{}], a new one will be added. {}",
+                        existingId.get(), testCaseKey, updateProblem.getMessage());
+            }
+        }
+        JsonNode created = client.createTestExecution(body);
+        LOGGER.info("Zephyr: [{}] added new execution {} in [{}]; POST answered: {}", testCaseKey,
+                created.path("id").asText("?"), testCycleKey, shorten(created));
+        if (created.hasNonNull("id")) {
+            readBack(client, created.path("id").asText());
+        }
+    }
+
+    private void readBack(ZephyrClient client, String executionId) {
+        try {
+            JsonNode stored = client.getTestExecution(executionId);
+            LOGGER.info("Zephyr: read back execution {}: {}", executionId, shorten(stored));
+        } catch (ZephyrApiException problem) {
+            LOGGER.warn("Zephyr: could not read back execution {}. {}", executionId, problem.getMessage());
+        }
+    }
+
+    private static String shorten(JsonNode node) {
+        String text = node.toString();
+        return text.length() <= MAX_ECHO_LENGTH ? text : text.substring(0, MAX_ECHO_LENGTH) + "...";
     }
 
     private void postManualExecution(ZephyrClient client, String testCycleKey, String testCaseKey) {
