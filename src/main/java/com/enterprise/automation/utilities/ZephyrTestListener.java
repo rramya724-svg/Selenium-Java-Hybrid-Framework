@@ -40,7 +40,6 @@ public class ZephyrTestListener implements ITestListener {
        logger.info("🏁 Test Execution Finished: " + context.getName());
     }
 
-    // 📌 Helper method to extract zephyr Test Case ID and update execution status
     private void updateZephyrExecution(ITestResult result, String status) {
         ZephyrTestCase annotation = result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(ZephyrTestCase.class);
         if (annotation != null) {

@@ -12,6 +12,7 @@ import com.enterprise.automation.utilities.DateUtility;
 import com.enterprise.automation.utilities.ExcelUtility;
 import com.enterprise.automation.utilities.LoggerUtility;
 import com.enterprise.automation.utilities.ScreenshotUtility;
+import com.enterprise.automation.zephyr.ZephyrListener;
 import org.apache.logging.log4j.Logger;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
@@ -43,10 +44,19 @@ public class TestListener implements ITestListener, ISuiteListener {
 
     @Override
     public void onFinish(ISuite suite) {
-        ExecutionSummary.markSuiteEnd();
-        ReportManager.flush();
-        logExecutionSummary(suite.getName());
-        EmailUtility.sendExecutionReport();
+        runSafely("mark the suite end", ExecutionSummary::markSuiteEnd);
+        runSafely("flush the Extent report", ReportManager::flush);
+        runSafely("log the execution summary", () -> logExecutionSummary(suite.getName()));
+        runSafely("send results to Zephyr", () -> ZephyrListener.reportOnce(suite));
+        runSafely("send the execution report email", EmailUtility::sendExecutionReport);
+    }
+
+    private static void runSafely(String step, Runnable action) {
+        try {
+            action.run();
+        } catch (RuntimeException | LinkageError problem) {
+            LOGGER.error("Suite finish step failed, continuing with the next step: {}", step, problem);
+        }
     }
 
     @Override

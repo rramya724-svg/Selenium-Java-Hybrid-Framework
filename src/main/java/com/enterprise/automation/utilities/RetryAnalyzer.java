@@ -10,11 +10,9 @@ import org.apache.logging.log4j.Logger;
 
 public class RetryAnalyzer implements IRetryAnalyzer {
 	private int retryAttemptsCounter = 0;
-	// Renamed maxRetryLimit to MAX_RETRY_LIMIT as per SonarQube rule
 	private static final int MAX_RETRY_LIMIT = 3;
 	private static final Logger logger = LogManager.getLogger(RetryAnalyzer.class);
 
-	// Constants for duplicated literals
 	private static final String ATTRIBUTE_RETRY_COUNT = "RETRY_COUNT";
 	private static final String ATTRIBUTE_ZEPHYR_TEST_CASE_ID = "zephyrTestCaseId";
 	private static final String ZEPHYR_STATUS_FAIL = "Fail";
@@ -28,32 +26,31 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		if (!result.isSuccess() && result.getStatus() != ITestResult.SKIP
 				&& result.getStatus() != ITestResult.SUCCESS_PERCENTAGE_FAILURE) {
 
-			result.setAttribute(ATTRIBUTE_RETRY_COUNT, retryAttemptsCounter + 1); // 1-based count
+			result.setAttribute(ATTRIBUTE_RETRY_COUNT, retryAttemptsCounter + 1);
 
-			if (retryAttemptsCounter < MAX_RETRY_LIMIT) { // Use the renamed constant
+			if (retryAttemptsCounter < MAX_RETRY_LIMIT) {
 				retryAttemptsCounter++;
 				closeBrowser();
 				return true;
 			} else {
-				updateZephyrAsFailed(result); // Final failure
+				updateZephyrAsFailed(result);
 			}
 		}
 		return false;
 	}
 
 	private void updateZephyrAsFailed(ITestResult result) {
-		String testCaseId = (String) result.getAttribute(ATTRIBUTE_ZEPHYR_TEST_CASE_ID); // Use constant
+		String testCaseId = (String) result.getAttribute(ATTRIBUTE_ZEPHYR_TEST_CASE_ID);
 
 		if (testCaseId == null) {
-			logger.info(ZEPHYR_TEST_CASE_ID_NOT_FOUND_WARN, result.getMethod().getMethodName()); // Use constant
+			logger.info(ZEPHYR_TEST_CASE_ID_NOT_FOUND_WARN, result.getMethod().getMethodName());
 			return;
 		}
 
-		String status = ZEPHYR_STATUS_FAIL; // Use constant
-		logger.info(ZEPHYR_UPDATE_LOG, testCaseId, status); // Use constant
+		String status = ZEPHYR_STATUS_FAIL;
+		logger.info(ZEPHYR_UPDATE_LOG, testCaseId, status);
 
 		try {
-			// Pass the full `ITestResult` object instead of just testCaseId
 			UpdateZephyrTestExecution.updateTestExecution(result, status);
 		} catch (Exception e) {
 			  logger.warn("Added for exeption");
@@ -64,10 +61,10 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		try {
 			if (BaseTest.getDriver() != null) {
 				BaseTest.getDriver().quit();
-				 logger.info(BROWSER_CLOSED_LOG, retryAttemptsCounter); // Use constant
+				 logger.info(BROWSER_CLOSED_LOG, retryAttemptsCounter);
 			}
 		} catch (Exception e) {
-	        logger.warn(BROWSER_CLOSE_EXCEPTION_WARN, e.getMessage(), e); // Use constant
+	        logger.warn(BROWSER_CLOSE_EXCEPTION_WARN, e.getMessage(), e);
 		}
 	}
 }

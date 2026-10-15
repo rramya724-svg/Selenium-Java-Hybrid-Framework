@@ -44,7 +44,8 @@ public final class EmailUtility {
     private static final String PROPERTY_SMTP_CONNECTION_TIMEOUT = "mail.smtp.connectiontimeout";
     private static final String PROPERTY_SMTP_READ_TIMEOUT = "mail.smtp.timeout";
     private static final String PROPERTY_SMTP_WRITE_TIMEOUT = "mail.smtp.writetimeout";
-    private static final String START_EMAIL_TIMEOUT_MILLIS = "20000";
+    private static final String SMTP_CONNECT_TIMEOUT_MILLIS = "20000";
+    private static final String SMTP_READ_WRITE_TIMEOUT_MILLIS = "60000";
     private static final String JENKINS_BUILD_URL = "BUILD_URL";
     private static final String ALLURE_REPORT_PATH = "allure/";
 
@@ -59,7 +60,7 @@ public final class EmailUtility {
         }
         String projectName = ConfigReader.get(ConfigKey.APPLICATION_NAME, "EnterpriseAutomationFramework");
         try {
-            MimeMessage message = new MimeMessage(buildSession(true));
+            MimeMessage message = new MimeMessage(buildSession());
             applyAddresses(message);
             message.setSubject(projectName + " execution started | "
                     + ConfigReader.get(ConfigKey.ENVIRONMENT, "QA") + " | "
@@ -136,7 +137,7 @@ public final class EmailUtility {
             return;
         }
         try {
-            Session session = buildSession(false);
+            Session session = buildSession();
             MimeMessage message = buildMessage(session);
             Transport.send(message);
             LOGGER.info(
@@ -150,7 +151,7 @@ public final class EmailUtility {
         }
     }
 
-    private static Session buildSession(boolean withTimeouts) {
+    private static Session buildSession() {
         Properties properties = new Properties();
         properties.put(PROPERTY_SMTP_HOST, ConfigReader.get(ConfigKey.EMAIL_SMTP_HOST));
         properties.put(PROPERTY_SMTP_PORT, ConfigReader.get(ConfigKey.EMAIL_SMTP_PORT));
@@ -165,11 +166,9 @@ public final class EmailUtility {
         );
         properties.put(PROPERTY_SMTP_SSL_PROTOCOLS, TLS_PROTOCOLS);
         properties.put(PROPERTY_SMTP_SSL_TRUST, ConfigReader.get(ConfigKey.EMAIL_SMTP_HOST));
-        if (withTimeouts) {
-            properties.put(PROPERTY_SMTP_CONNECTION_TIMEOUT, START_EMAIL_TIMEOUT_MILLIS);
-            properties.put(PROPERTY_SMTP_READ_TIMEOUT, START_EMAIL_TIMEOUT_MILLIS);
-            properties.put(PROPERTY_SMTP_WRITE_TIMEOUT, START_EMAIL_TIMEOUT_MILLIS);
-        }
+        properties.put(PROPERTY_SMTP_CONNECTION_TIMEOUT, SMTP_CONNECT_TIMEOUT_MILLIS);
+        properties.put(PROPERTY_SMTP_READ_TIMEOUT, SMTP_READ_WRITE_TIMEOUT_MILLIS);
+        properties.put(PROPERTY_SMTP_WRITE_TIMEOUT, SMTP_READ_WRITE_TIMEOUT_MILLIS);
         final String username = ConfigReader.get(ConfigKey.EMAIL_USERNAME);
         final String password = ConfigReader.get(ConfigKey.EMAIL_PASSWORD);
         return Session.getInstance(properties, new jakarta.mail.Authenticator() {
