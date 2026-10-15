@@ -7,10 +7,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- =========================================================
-         PROJECT INFORMATION
-         ========================================================= -->
-
     <groupId>com.enterprise.automation</groupId>
 
     <artifactId>EnterpriseAutomationFramework</artifactId>
@@ -27,23 +23,14 @@
     </description>
 
 
-    <!-- =========================================================
-         PROPERTIES
-         ========================================================= -->
-
     <properties>
 
-        <!-- Java -->
         <maven.compiler.release>21</maven.compiler.release>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-
-        <!-- =====================================================
-             DEPENDENCY VERSIONS
-             ===================================================== -->
 
         <selenium.version>4.27.0</selenium.version>
 
@@ -63,20 +50,11 @@
 
         <commons.lang3.version>3.17.0</commons.lang3.version>
 
-        <!-- JSON for the Zephyr Essential REST integration -->
         <jackson.version>2.20.1</jackson.version>
 
 
-        <!-- =====================================================
-             ALLURE
-             ===================================================== -->
-
         <allure.version>2.35.3</allure.version>
 
-
-        <!-- =====================================================
-             MAVEN PLUGIN VERSIONS
-             ===================================================== -->
 
         <compiler.plugin.version>3.13.0</compiler.plugin.version>
 
@@ -85,18 +63,10 @@
         <sonar.plugin.version>4.0.0.4121</sonar.plugin.version>
 
 
-        <!-- =====================================================
-             TEST EXECUTION
-             ===================================================== -->
-
         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 
         <thread.count>4</thread.count>
 
-
-        <!-- =====================================================
-             SONARQUBE
-             ===================================================== -->
 
         <sonar.projectKey>EnterpriseAutomationFramework</sonar.projectKey>
 
@@ -108,10 +78,6 @@
 
     </properties>
 
-
-    <!-- =========================================================
-         ALLURE DEPENDENCY MANAGEMENT
-         ========================================================= -->
 
     <dependencyManagement>
 
@@ -136,16 +102,8 @@
     </dependencyManagement>
 
 
-    <!-- =========================================================
-         DEPENDENCIES
-         ========================================================= -->
-
     <dependencies>
 
-
-        <!-- =====================================================
-             SELENIUM
-             ===================================================== -->
 
         <dependency>
 
@@ -158,10 +116,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             WEBDRIVER MANAGER
-             ===================================================== -->
-
         <dependency>
 
             <groupId>io.github.bonigarcia</groupId>
@@ -172,10 +126,6 @@
 
         </dependency>
 
-
-        <!-- =====================================================
-             TESTNG
-             ===================================================== -->
 
         <dependency>
 
@@ -188,10 +138,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             EXTENT REPORTS
-             ===================================================== -->
-
         <dependency>
 
             <groupId>com.aventstack</groupId>
@@ -203,10 +149,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             ALLURE TESTNG
-             ===================================================== -->
-
         <dependency>
 
             <groupId>io.qameta.allure</groupId>
@@ -217,10 +159,6 @@
 
         </dependency>
 
-
-        <!-- =====================================================
-             LOG4J
-             ===================================================== -->
 
         <dependency>
 
@@ -255,10 +193,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             APACHE POI
-             ===================================================== -->
-
         <dependency>
 
             <groupId>org.apache.poi</groupId>
@@ -281,10 +215,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             JAKARTA MAIL / ANGUS MAIL
-             ===================================================== -->
-
         <dependency>
 
             <groupId>org.eclipse.angus</groupId>
@@ -295,10 +225,6 @@
 
         </dependency>
 
-
-        <!-- =====================================================
-             COMMONS IO
-             ===================================================== -->
 
         <dependency>
 
@@ -311,10 +237,6 @@
         </dependency>
 
 
-        <!-- =====================================================
-             COMMONS LANG3
-             ===================================================== -->
-
         <dependency>
 
             <groupId>org.apache.commons</groupId>
@@ -325,10 +247,6 @@
 
         </dependency>
 
-
-        <!-- =====================================================
-             JACKSON (Zephyr Essential REST integration)
-             ===================================================== -->
 
         <dependency>
 
@@ -343,20 +261,12 @@
     </dependencies>
 
 
-    <!-- =========================================================
-         BUILD
-         ========================================================= -->
-
     <build>
 
         <finalName>EnterpriseAutomationFramework</finalName>
 
         <plugins>
 
-
-            <!-- =================================================
-                 MAVEN COMPILER
-                 ================================================= -->
 
             <plugin>
 
@@ -383,10 +293,6 @@
             </plugin>
 
 
-            <!-- =================================================
-                 MAVEN SUREFIRE
-                 ================================================= -->
-
             <plugin>
 
                 <groupId>org.apache.maven.plugins</groupId>
@@ -397,7 +303,6 @@
 
                 <configuration>
 
-                    <!-- TestNG suite -->
                     <suiteXmlFiles>
 
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
@@ -405,21 +310,17 @@
                     </suiteXmlFiles>
 
 
-                    <!-- Thread count -->
                     <threadCount>${thread.count}</threadCount>
 
 
-                    <!-- Fail Maven build when tests fail -->
                     <testFailureIgnore>false</testFailureIgnore>
 
 
-                    <!-- Surefire reports -->
                     <reportsDirectory>
                         ${project.basedir}/test-output/surefire-reports
                     </reportsDirectory>
 
 
-                    <!-- System properties -->
                     <systemPropertyVariables>
 
                         <log4j2.configurationFile>
@@ -432,10 +333,6 @@
 
             </plugin>
 
-
-            <!-- =================================================
-                 SONARQUBE
-                 ================================================= -->
 
             <plugin>
 

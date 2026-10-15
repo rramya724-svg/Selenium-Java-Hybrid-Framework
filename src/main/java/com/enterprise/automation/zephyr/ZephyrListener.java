@@ -34,20 +34,25 @@ public class ZephyrListener implements ISuiteListener {
     private static final String TEST_CASE_ID_ATTRIBUTE = "testCaseId";
     private static final Set<ISuite> REPORTED_SUITES =
             Collections.synchronizedSet(Collections.newSetFromMap(new IdentityHashMap<>()));
-    private final Map<String, Long> suiteStartMillis = new ConcurrentHashMap<>();
+    private static final Map<String, Long> SUITE_START_MILLIS = new ConcurrentHashMap<>();
 
     @Override
     public void onStart(ISuite suite) {
-        suiteStartMillis.put(suite.getName(), System.currentTimeMillis());
+        SUITE_START_MILLIS.put(suite.getName(), System.currentTimeMillis());
     }
 
     @Override
     public void onFinish(ISuite suite) {
+        reportOnce(suite);
+    }
+
+    public static void reportOnce(ISuite suite) {
         long endMillis = System.currentTimeMillis();
         if (!REPORTED_SUITES.add(suite)) {
-            LOGGER.debug("Zephyr: suite [{}] already reported by another listener instance", suite.getName());
+            LOGGER.debug("Zephyr: suite [{}] already reported", suite.getName());
             return;
         }
+        LOGGER.info("Zephyr: suite [{}] finished, sending results to Zephyr", suite.getName());
         try {
             ZephyrSettings settings = ZephyrSettings.load();
             if (!settings.enabled()) {
@@ -58,7 +63,7 @@ public class ZephyrListener implements ISuiteListener {
             List<ZephyrExecutionRecord> records = collectFinalResults(suite);
             ZephyrRunInfo run = new ZephyrRunInfo(
                     suite.getName(),
-                    suiteStartMillis.getOrDefault(suite.getName(), endMillis),
+                    SUITE_START_MILLIS.getOrDefault(suite.getName(), earliestStartMillis(records, endMillis)),
                     endMillis,
                     ConfigReader.get(ConfigKey.BROWSER, "chrome"),
                     ConfigReader.getBoolean(ConfigKey.HEADLESS, false),
@@ -67,6 +72,11 @@ public class ZephyrListener implements ISuiteListener {
         } catch (RuntimeException | LinkageError unexpected) {
             LOGGER.error("Zephyr: unexpected problem while reporting results; test results are unaffected", unexpected);
         }
+    }
+
+    private static long earliestStartMillis(List<ZephyrExecutionRecord> records, long fallbackMillis) {
+        return records.stream().mapToLong(ZephyrExecutionRecord::startMillis).filter(start -> start > 0)
+                .min().orElse(fallbackMillis);
     }
 
     static List<ZephyrExecutionRecord> collectFinalResults(ISuite suite) {

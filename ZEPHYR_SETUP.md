@@ -38,7 +38,7 @@ are not affected.
 Each test method carries its key, for example:
 
 ```java
-@ZephyrTestCase("SCRUM-T9")  // TC_001 in Zephyr Essential
+@ZephyrTestCase("SCRUM-T9")
 @Test(description = "Verify that the Amazon India home page loads and exposes the expected title", ...)
 public void verifyAmazonHomePageTitle() { ... }
 ```
@@ -70,14 +70,28 @@ open don't see the new variable.
 **Eclipse only:** open *Run > Run Configurations > (your TestNG/Maven config) >
 Environment > Add*, and set Name to `ZEPHYR_API_TOKEN` and Value to your token.
 
-**Jenkins:** store the token as a *Secret text* credential and bind it to the
-variable `ZEPHYR_API_TOKEN`:
+**Jenkins:** the project has a `Jenkinsfile` at its root. Create a *Pipeline*
+job, choose *Pipeline script from SCM*, point it at this repository and set
+**Branch Specifier** to `*/Ramya`. The `main` branch on GitHub holds only the
+pom, so a job that builds `main` has no tests and no Zephyr code.
+
+The token in `config.properties` is used in Jenkins too, so no extra setup is
+needed. To keep the token out of the repository instead, clear
+`zephyr.api.token=` in `config.properties`, store the token as a *Secret text*
+credential and bind it to `ZEPHYR_API_TOKEN`:
 
 ```groovy
 withCredentials([string(credentialsId: 'zephyr-api-token', variable: 'ZEPHYR_API_TOKEN')]) {
-    bat 'mvn clean test'      // sh 'mvn clean test' on Linux agents
+    bat 'mvn clean test'
 }
 ```
+
+Use `sh` instead of `bat` on Linux agents.
+
+At the end of the suite the framework sends the results to Zephyr **first**
+and the report email **after**. The email has 20 s connect and 60 s read/write
+timeouts, so a Jenkins server that cannot reach the SMTP server no longer holds
+up or blocks the Zephyr update.
 
 **For a single run only:**
 
@@ -157,6 +171,9 @@ naming your existing cases use. If it finds none and
 | `manual test case [SCRUM-T7] could not be added` | That key doesn't exist or is archived. Fix `zephyr.manual.test.cases`. |
 | `sending without them` (environment) | `zephyr.environment` doesn't exist in Zephyr. Clear it or create that environment. |
 | No `ZEPHYR SYNC` block at all | Look for a `Zephyr:` line near the end of the console. If there's none, the test class doesn't extend `BaseTest` and the run didn't use `testng.xml`. Extend `BaseTest`, or run the suite file. |
+| Jenkins: works on your PC, nothing in Zephyr from Jenkins | Open the build's *Console Output* and search for `Zephyr:`. `no API token` means Jenkins built an old commit or the wrong branch (use `*/Ramya`). `could not be reached` means the Jenkins server has no route to `prod-api.zephyr4jiracloud.com`: add `-Dhttps.proxyHost=<host> -Dhttps.proxyPort=<port>` to the mvn command or ask IT to allow the host. |
+| Jenkins: build sits after `SUITE FINISHED` | The report email is waiting on an SMTP port the Jenkins server cannot reach. Zephyr now runs before the email and the email gives up after its timeouts. Turn the email off for a run with `-Demail.enabled=false`. |
+| A new test never shows up in Zephyr | Check its import: it must be `com.enterprise.automation.zephyr.ZephyrTestCase`. The old `com.enterprise.automation.utilities.ZephyrTestCase` (with `id=`) is ignored by the reporter. |
 
 ## Where the code lives
 
@@ -164,7 +181,7 @@ naming your existing cases use. If it finds none and
 
 | File | What it does |
 |---|---|
-| `ZephyrListener` | TestNG listener. Collects the final results after the suite finishes. It's registered in `testng.xml` and through `@Listeners` on `BaseTest`, and reports each suite once. |
+| `ZephyrListener` | TestNG listener. Collects the final results after the suite finishes. It's registered in `testng.xml` and through `@Listeners` on `BaseTest`, and `TestListener` also calls it before the report email. Each suite is reported once. |
 | `ZephyrSyncService` | Picks the API host, creates the cycle, maps tests to cases, posts executions and manual cases, logs the summary. |
 | `ZephyrClient` | REST API v2 calls (the same for Zephyr Essential and Zephyr), with retry on rate limits (429), server errors and network errors. |
 | `ZephyrSettings` | Reads `config.properties`, `-D` overrides and `ZEPHYR_API_TOKEN`. |
